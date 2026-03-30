@@ -1,0 +1,400 @@
+{
+  "site": {
+    "name": "Mithun Murali",
+    "role": "IB MYP Design Educator",
+    "formspreeId": "xkoprbvw"
+  },
+
+  "home": {
+    "eyebrow": "IB MYP Design — Teaching Portfolio",
+    "headline": "Designing Thinkers,",
+    "headlineAccent": "Not Just Solutions.",
+    "subline": "I am a User Experience Designer making a deliberate transition into IB MYP Design education — bringing structured design thinking, real-world problem-solving, and a deep commitment to inquiry-based learning into the classroom.",
+    "pillars": [
+      {
+        "title": "Design Thinking",
+        "desc": "Systematic problem-solving methodologies tailored for student cognitive development."
+      },
+      {
+        "title": "Inquiry-Based Learning",
+        "desc": "Fostering curiosity through open-ended investigations and critical questioning."
+      },
+      {
+        "title": "User-Centered Approach",
+        "desc": "Applying empathy to solve real human needs through iterative design cycles."
+      },
+      {
+        "title": "Mentorship",
+        "desc": "Guiding the next generation of thinkers with industry-standard design practice."
+      }
+    ],
+    "lessonHighlights": [
+      {
+        "title": "Rapid Prototyping Sprint",
+        "duration": "90 mins",
+        "desc": "A high-energy lesson focused on building low-fidelity physical models within strict time constraints.",
+        "page": "demos"
+      },
+      {
+        "title": "Empathy Interview Lab",
+        "duration": "60 mins",
+        "desc": "Methodologies for gathering deep user insights through structured qualitative research techniques.",
+        "page": "demos"
+      },
+      {
+        "title": "UX Critique Circle",
+        "duration": "45 mins",
+        "desc": "Facilitating constructive feedback sessions using specific rubric-based assessment criteria.",
+        "page": "demos"
+      }
+    ]
+  },
+
+  "about": {
+    "headline": "A deliberate transition,\nnot a career pivot.",
+    "intro": "I am a User Experience Designer currently working on complex B2B systems at Ideaforge Technology — where my work involves structured problem-solving, understanding user needs, and iterative solution development.",
+    "paragraphs": [
+      "Over time, I realised that what excites me most is not just building solutions, but shaping how people think while solving problems. Through mentoring interns at work — guiding them from problem identification to refined solutions — I saw how powerful it is to develop someone's thinking process rather than hand them answers.",
+      "That realisation led me to IB Design education. The MYP framework uniquely positions design not as an aesthetic skill but as a way of thinking — emphasising inquiry, design cycles, and reflection. This closely mirrors real-world design processes, and I see it as the right environment to help students become thoughtful problem-solvers.",
+      "This transition is a conscious shift, not a temporary move. I have treated the transition itself as a structured design problem: understanding how students learn, how design thinking can be taught effectively, and how classroom experiences can be intentionally designed."
+    ],
+    "education": [
+      {
+        "degree": "Master of Design — Interaction Design",
+        "institution": "IDC School of Design, IIT Bombay",
+        "detail": "Design as a structured thinking discipline. Strong emphasis on research, human needs, systems thinking, and ethics. Mentored by faculty contributing to India's National Education Policy (NEP 2020)."
+      },
+      {
+        "degree": "Bachelor of Technology — Mechanical Engineering",
+        "institution": "Amrita School of Engineering, Bangalore",
+        "detail": ""
+      }
+    ],
+    "experience": {
+      "role": "UX / Product Designer",
+      "org": "Ideaforge Technology Ltd",
+      "period": "2023 – Present",
+      "points": [
+        "Translated complex, ambiguous requirements into structured, user-centred problem statements — the same process the IB MYP Design cycle asks students to practise.",
+        "Led design work on high-stakes government use cases, reframing abstract requirements into clear design challenges.",
+        "Mentored UX/UI interns from IDC and NID, guiding them through design thinking processes using questioning-based feedback rather than prescriptive answers.",
+        "Applied iterative design: research → ideation → prototyping → evaluation — exactly the MYP Design cycle."
+      ]
+    },
+    "ibReadiness": [
+      "Clear understanding of IB Programme structure (PYP, MYP, DP)",
+      "Primary focus on MYP Design as a foundational thinking discipline",
+      "Familiar with MYP Design Criteria A–D",
+      "Familiar with Approaches to Learning (ATL) skills",
+      "Familiar with Global Contexts and conceptual learning",
+      "Actively preparing for IB Professional Development certification"
+    ]
+  },
+
+  "philosophy": {
+    "headline": "Design education is not about producing designers.",
+    "subline": "It is about developing students who can observe carefully, empathise responsibly, define problems clearly, and reflect before acting.",
+    "quote": "Whether students become doctors, engineers, scientists, civil servants, or policymakers — the habits they develop through design thinking stay deeply relevant. Design gives them a transferable mindset, not a vocational skill.",
+    "pillars": [
+      {
+        "number": "01",
+        "title": "Critical Thinking",
+        "desc": "Developing the ability to question, explore, and think independently rather than accepting ready-made solutions. Students slow down assumptions and understand context before acting."
+      },
+      {
+        "number": "02",
+        "title": "Empathy First",
+        "desc": "Prioritising observation of real human needs before designing anything. Students learn to consider diverse perspectives and question their own assumptions."
+      },
+      {
+        "number": "03",
+        "title": "Process Over Product",
+        "desc": "Valuing the documentation of failure, iteration, and reflection as much as the final outcome. A strong process leads to meaningful products — not the other way around."
+      },
+      {
+        "number": "04",
+        "title": "Student Agency",
+        "desc": "Anchoring problems in students' real lives so design becomes a tool, not a subject. When students connect with the problem, engagement shifts from 'I have to' to 'I want to.'"
+      }
+    ],
+    "translations": [
+      { "industry": "User Research", "classroom": "Student Inquiry" },
+      { "industry": "Problem Framing", "classroom": "Design Brief Development" },
+      { "industry": "Wireframing", "classroom": "Idea Development & Sketching" },
+      { "industry": "Prototyping", "classroom": "Creating Solutions" },
+      { "industry": "Usability Testing", "classroom": "Peer Critique & Evaluation" },
+      { "industry": "Iteration", "classroom": "Reflection & Refinement" }
+    ],
+    "closingStatement": "In industry, success is measured by the output — what gets built. But the real value lies in the thinking behind those outputs. IB Design gives me a structured environment to cultivate that thinking at the right age, when students are forming their problem-solving mindset."
+  },
+
+  "units": {
+    "intro": "A progression of inquiry-driven design units across MYP levels, guiding students from structured observation to independent problem-solving. Units are designed to progressively build students' ability to move from structured inquiry to independent thinking, aligned with the IB MYP Design cycle and assessment criteria.",
+    "progressionSteps": [
+      { "label": "Identifying", "sub": "Observe · Understand" },
+      { "label": "Empathising", "sub": "Develop" },
+      { "label": "Ideating", "sub": "Prototype" },
+      { "label": "Refining", "sub": "Create · Evaluate" }
+    ],
+    "levels": [
+      {
+        "grade": "MYP 1",
+        "theme": "Foundations of Observation",
+        "units": [
+          {
+            "id": "anatomy-everyday-objects",
+            "title": "The Anatomy of Everyday Objects",
+            "desc": "Students deconstruct household items to understand form, function, and the basics of technical sketching.",
+            "criteria": ["A", "B"],
+            "focus": "Research",
+            "duration": "6 Weeks",
+            "status": "outline"
+          },
+          {
+            "id": "eco-enclosures",
+            "title": "Eco Enclosures",
+            "desc": "Introduction to sustainable materials through the design and construction of small-scale modular packaging.",
+            "criteria": ["C", "D"],
+            "focus": "Self-Management",
+            "duration": "8 Weeks",
+            "status": "outline"
+          }
+        ]
+      },
+      {
+        "grade": "MYP 2",
+        "theme": "Understanding Users & Context",
+        "units": [
+          {
+            "id": "everyday-accessibility",
+            "title": "Designing for Everyday Accessibility",
+            "desc": "Students identify accessibility challenges in their environment and develop human-centred solutions using the full MYP Design cycle.",
+            "criteria": ["A", "B", "C", "D"],
+            "focus": "Empathy",
+            "duration": "3 Weeks",
+            "status": "full",
+            "keyConcept": "Development",
+            "relatedConcepts": ["Function", "Innovation"],
+            "globalContext": "Personal and Cultural Expression",
+            "statementOfInquiry": "Design solutions reflect how individuals understand and respond to everyday challenges.",
+            "inquiryQuestions": {
+              "factual": "What are common accessibility challenges in everyday objects?",
+              "conceptual": "How does design influence usability?",
+              "debatable": "Is a simple design always a better design?"
+            },
+            "weeks": [
+              {
+                "number": 1,
+                "title": "Investigate",
+                "desc": "Students observe real-life objects (school bags, desks, bottles) and identify usability challenges. They document findings through notes and simple analysis.",
+                "focus": "Noticing usability problems"
+              },
+              {
+                "number": 2,
+                "title": "Develop Ideas",
+                "desc": "Students generate multiple design ideas through sketches and annotations. They compare options and justify their selected solution.",
+                "focus": "Idea generation and choice"
+              },
+              {
+                "number": 3,
+                "title": "Create & Evaluate",
+                "desc": "Students create a basic prototype or representation of their solution. They present their work and reflect on its effectiveness, identifying areas for improvement.",
+                "focus": "Making and reflecting"
+              }
+            ],
+            "assessment": [
+              { "criterion": "A", "focus": "Research and problem understanding", "tool": "Formative Portfolio" },
+              { "criterion": "B", "focus": "Idea generation and justification", "tool": "Design Specification" },
+              { "criterion": "C", "focus": "Development of solution", "tool": "Process Journal" },
+              { "criterion": "D", "focus": "Reflection and evaluation", "tool": "Reflection Essay" }
+            ],
+            "successCriteria": [
+              "Identify a real-world problem with clarity",
+              "Develop multiple design ideas through sketching",
+              "Justify their chosen solution against a design brief",
+              "Reflect meaningfully on strengths and limitations"
+            ],
+            "differentiation": [
+              "Provide structured templates for students who require additional support",
+              "Encourage open-ended exploration and deeper user research for advanced learners"
+            ],
+            "atlSkills": ["Communication", "Critical Thinking", "Collaboration"]
+          },
+          {
+            "id": "community-wayfinding",
+            "title": "Community Wayfinding",
+            "desc": "Developing signage systems and visual maps for a local school context to improve navigation efficiency.",
+            "criteria": ["A", "D"],
+            "focus": "Social",
+            "duration": "6 Weeks",
+            "status": "outline"
+          }
+        ]
+      },
+      {
+        "grade": "MYP 3",
+        "theme": "Systems Thinking",
+        "units": [
+          {
+            "id": "circular-economy",
+            "title": "Circular Economy Systems",
+            "desc": "Moving beyond product design to design entire lifecycles for consumer products, ensuring zero waste.",
+            "criteria": ["A", "B", "C", "D"],
+            "focus": "Critical Thinking",
+            "duration": "9 Weeks",
+            "status": "outline"
+          },
+          {
+            "id": "smart-habitats",
+            "title": "Smart Habitats",
+            "desc": "Applying automated systems and basic electronics to solve specific environmental challenges in the classroom.",
+            "criteria": ["B", "C"],
+            "focus": "Transfer",
+            "duration": "8 Weeks",
+            "status": "outline"
+          }
+        ]
+      },
+      {
+        "grade": "MYP 4",
+        "theme": "Designing with Constraints",
+        "units": [
+          {
+            "id": "material-limitations",
+            "title": "Material Limitations",
+            "desc": "A rigorous exploration of structural engineering using only biodegradable polymers and recycled paper.",
+            "criteria": ["A", "B"],
+            "focus": "Analysis",
+            "duration": "10 Weeks",
+            "status": "outline"
+          },
+          {
+            "id": "urban-nexus",
+            "title": "The Urban Nexus",
+            "desc": "Designing modular public furniture that must adhere to strict spatial, safety, and durability regulations.",
+            "criteria": ["C", "D"],
+            "focus": "Collaboration",
+            "duration": "8 Weeks",
+            "status": "outline"
+          }
+        ]
+      },
+      {
+        "grade": "MYP 5",
+        "theme": "Independent Design Thinking",
+        "units": [
+          {
+            "id": "personal-design-project",
+            "title": "The Personal Design Project",
+            "desc": "The capstone unit where students define their own problem and execute the full design cycle independently.",
+            "criteria": ["A", "B", "C", "D"],
+            "focus": "Autonomy",
+            "duration": "12 Weeks",
+            "status": "outline"
+          },
+          {
+            "id": "reflective-mastery",
+            "title": "Reflective Mastery",
+            "desc": "A deep dive into impact assessment, evaluating the social and environmental consequences of design solutions.",
+            "criteria": ["D"],
+            "focus": "Reflection",
+            "duration": "6 Weeks",
+            "status": "outline"
+          }
+        ]
+      }
+    ]
+  },
+
+  "demos": {
+    "intro": "Structured, inquiry-driven lessons that translate design thinking into meaningful classroom experiences. Each lesson is designed to balance structure with creative freedom, ensuring students remain engaged while developing critical thinking skills.",
+    "lessonStructure": [
+      { "step": "01", "title": "Warm-up", "desc": "Engage students with a hook or provocative question to spark curiosity." },
+      { "step": "02", "title": "Inquiry", "desc": "Problem exploration through research and collaborative brainstorming." },
+      { "step": "03", "title": "Activity", "desc": "Hands-on design work, prototyping, and active experimentation." },
+      { "step": "04", "title": "Reflection", "desc": "Group discussion, evaluation of work, and connecting back to learning goals." }
+    ],
+    "lessons": [
+      {
+        "id": "accessibility-audit-sprint",
+        "title": "Accessibility Audit Sprint",
+        "grade": "MYP 3",
+        "duration": "90 mins",
+        "phase": "Inquiring",
+        "criteria": ["A"],
+        "objective": "Students analyse their environment to identify usability and accessibility challenges in common objects.",
+        "steps": [
+          { "num": "01", "desc": "Students walk through the school space and document accessibility barriers they observe — physical, sensory, or cognitive." },
+          { "num": "02", "desc": "Each student selects one barrier and frames it as a clear design problem statement." },
+          { "num": "03", "desc": "Students rapidly sketch 3 possible improvements, focusing on function over aesthetics." },
+          { "num": "04", "desc": "Class shares findings — groups discuss whose observation had the most human impact and why." }
+        ],
+        "outcomes": ["Improved observational skills", "Empathy for diverse users", "Clear problem framing", "Understanding of real-world constraints"]
+      },
+      {
+        "id": "empathy-interview-lab",
+        "title": "Empathy Interview Lab",
+        "grade": "MYP 2",
+        "duration": "60 mins",
+        "phase": "Inquiring",
+        "criteria": ["A"],
+        "objective": "Students conduct structured interviews to understand user needs and perspectives deeply.",
+        "steps": [
+          { "num": "01", "desc": "Students receive a brief: identify a daily frustration faced by someone at home — a parent, sibling, or grandparent." },
+          { "num": "02", "desc": "Students prepare 5 open-ended interview questions — not 'do you like X?' but 'tell me about a time when...'" },
+          { "num": "03", "desc": "In pairs, students role-play the interview. One student is the 'user', one is the 'designer'. Then they switch." },
+          { "num": "04", "desc": "Students write a user need statement: '[Person] needs a way to [goal] because [insight].' Shared with class." }
+        ],
+        "outcomes": ["Structured listening skills", "Empathy-driven user insights", "User need statement writing", "Foundation for design brief development"]
+      },
+      {
+        "id": "rapid-prototyping-sprint",
+        "title": "Rapid Prototyping Sprint",
+        "grade": "MYP 3",
+        "duration": "120 mins",
+        "phase": "Developing",
+        "criteria": ["B", "C"],
+        "objective": "Students convert ideas into low-fidelity prototypes for quick testing and user feedback loops.",
+        "steps": [
+          { "num": "01", "desc": "Students receive a pre-defined design brief (e.g. redesign a school stationery item for a student with limited hand mobility)." },
+          { "num": "02", "desc": "10 minutes: students sketch 3 distinct concepts — no judgment, quantity over quality at this stage." },
+          { "num": "03", "desc": "Students build a rough physical prototype using only paper, tape, and scissors. Focus on communicating function, not finish." },
+          { "num": "04", "desc": "Prototypes are tested by a peer acting as the target user. Designer observes silently, takes notes, then iterates." }
+        ],
+        "outcomes": ["Speed of idea externalisation", "Low-fidelity prototyping skills", "User testing fundamentals", "Iterative thinking in practice"]
+      },
+      {
+        "id": "ux-critique-circle",
+        "title": "UX Critique Circle",
+        "grade": "MYP 4",
+        "duration": "45 mins",
+        "phase": "Evaluating",
+        "criteria": ["D"],
+        "objective": "Students evaluate peer designs using structured feedback frameworks based on design principles.",
+        "steps": [
+          { "num": "01", "desc": "Each student posts their work-in-progress on the wall or desk with a brief description of the problem they were solving." },
+          { "num": "02", "desc": "Students rotate and leave sticky-note feedback using a structured format: 'I notice...', 'I wonder...', 'What if...'" },
+          { "num": "03", "desc": "Designers read their feedback silently, identify one insight they hadn't considered, and note it in their process journal." },
+          { "num": "04", "desc": "Class debrief: what did good feedback look like? What made some feedback more useful than others?" }
+        ],
+        "outcomes": ["Structured critique vocabulary", "Evaluative thinking skills", "Receptiveness to feedback", "Peer learning culture"]
+      },
+      {
+        "id": "design-constraint-challenge",
+        "title": "Design Constraint Challenge",
+        "grade": "MYP 1",
+        "duration": "90 mins",
+        "phase": "Creating",
+        "criteria": ["C"],
+        "objective": "Students solve a specific problem within strict material or time limitations to foster innovative thinking.",
+        "steps": [
+          { "num": "01", "desc": "Students receive the constraint: design a container that holds 10 marbles and can be dropped from 1 metre without breaking — using only one sheet of newspaper and 30cm of tape." },
+          { "num": "02", "desc": "5 minutes planning only — no building yet. Students sketch their approach and identify the biggest risk." },
+          { "num": "03", "desc": "20 minutes to build. No additional materials allowed. Teacher circulates asking 'why did you decide that?'" },
+          { "num": "04", "desc": "Drop test. Students whose design fails reflect: what would you change? Students whose design works reflect: what was the critical decision?" }
+        ],
+        "outcomes": ["Creative thinking within constraints", "Decision-making under pressure", "Failure as data — not defeat", "Reflective documentation skills"]
+      }
+    ]
+  }
+}
