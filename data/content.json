@@ -1,8 +1,8 @@
 {
   "site": {
     "name": "Mithun Murali",
-    "role": "IB MYP Design Educator",
-    "formspreeId": "xkoprbvw"
+    "role": "Aspiring IB MYP Design Educator",
+    "formspreeId": "YOUR_FORMSPREE_ID"
   },
 
   "home": {
@@ -99,12 +99,12 @@
       {
         "number": "01",
         "title": "Critical Thinking",
-        "desc": "Developing the ability to question, explore, and think independently rather than accepting ready-made solutions. Students slow down assumptions and understand context before acting."
+        "desc": "I would guide students to slow down assumptions, question what they think they already know, and understand context before attempting any design response."
       },
       {
         "number": "02",
         "title": "Empathy First",
-        "desc": "Prioritising observation of real human needs before designing anything. Students learn to consider diverse perspectives and question their own assumptions."
+        "desc": "I would build activities that ask students to observe real human needs before designing anything — considering diverse perspectives and questioning their own assumptions first."
       },
       {
         "number": "03",
@@ -114,7 +114,7 @@
       {
         "number": "04",
         "title": "Student Agency",
-        "desc": "Anchoring problems in students' real lives so design becomes a tool, not a subject. When students connect with the problem, engagement shifts from 'I have to' to 'I want to.'"
+        "desc": "I would anchor problems in students' real lives so design becomes a tool, not a subject. I believe that when students connect with the problem, engagement shifts from 'I have to' to 'I want to solve this.'"
       }
     ],
     "translations": [
@@ -125,7 +125,7 @@
       { "industry": "Usability Testing", "classroom": "Peer Critique & Evaluation" },
       { "industry": "Iteration", "classroom": "Reflection & Refinement" }
     ],
-    "closingStatement": "In industry, success is measured by the output — what gets built. But the real value lies in the thinking behind those outputs. IB Design gives me a structured environment to cultivate that thinking at the right age, when students are forming their problem-solving mindset."
+    "closingStatement": "In industry, success is measured by the output — what gets built. But the real value lies in the thinking behind those outputs. IB Design would give me a structured environment to cultivate that thinking at the right age — when students are forming their problem-solving mindset."
   },
 
   "units": {
@@ -307,7 +307,7 @@
   },
 
   "demos": {
-    "intro": "Structured, inquiry-driven lessons that translate design thinking into meaningful classroom experiences. Each lesson is designed to balance structure with creative freedom, ensuring students remain engaged while developing critical thinking skills.",
+    "intro": "Structured, inquiry-driven lessons designed to translate design thinking into meaningful classroom experiences. Each lesson is built to balance structure with creative freedom — keeping students engaged while building the critical thinking skills that matter beyond the classroom.",
     "lessonStructure": [
       { "step": "01", "title": "Warm-up", "desc": "Engage students with a hook or provocative question to spark curiosity." },
       { "step": "02", "title": "Inquiry", "desc": "Problem exploration through research and collaborative brainstorming." },
