@@ -837,13 +837,272 @@
         "theme": "Independent Design Thinking",
         "units": [
           {
-            "id": "personal-design-project",
-            "title": "The Personal Design Project",
-            "desc": "The capstone unit where students define their own problem and execute the full design cycle independently.",
+            "id": "independent-design-project",
+            "title": "Independent Design Project",
+            "desc": "The culmination of the MYP Design journey. Students independently identify a real-world problem, conduct research, develop and justify ideas, create a solution, and critically evaluate outcomes — with the teacher shifting from instructor to facilitator.",
             "criteria": ["A", "B", "C", "D"],
             "focus": "Autonomy",
-            "duration": "12 Weeks",
-            "status": "outline"
+            "duration": "5–6 Weeks · 18–22 Lessons",
+            "status": "full",
+            "keyConcept": "Change",
+            "relatedConcepts": ["Innovation", "Function", "Sustainability"],
+            "globalContext": "Scientific and Technical Innovation",
+            "statementOfInquiry": "Innovative design solutions drive change by addressing real-world problems through informed decision-making and critical evaluation.",
+            "unitOverview": "This unit is the culmination of the MYP Design journey. Students independently identify a real-world problem that matters to them, conduct their own research, design a solution, build a prototype, test it with real or simulated users, and evaluate its impact with maturity and honesty. The teacher shifts from instructor to facilitator — this is the student's project, driven by their own curiosity and commitment. The unit mirrors the mindset of the IB Personal Project and prepares students for that level of independence.",
+            "summativeTask": "Students complete a full independent design project: self-selected problem, independent research and analysis, detailed design specification, idea generation and justified selection, prototype creation, user testing, and a professional-standard evaluation and presentation.",
+            "inquiryQuestions": {
+              "factual": "What processes do designers follow to create effective solutions?",
+              "conceptual": "How does design create meaningful change?",
+              "debatable": "Is innovation always beneficial?"
+            },
+            "weeks": [
+              {
+                "number": 1,
+                "title": "Project Initiation",
+                "desc": "Students shift from following teacher-defined challenges to owning their own. They explore problem spaces broadly, select a meaningful focus, narrow it to a solvable design challenge, and plan their independent research journey.",
+                "focus": "Shifting responsibility: from student following → student leading",
+                "lessons": [
+                  {
+                    "number": 1,
+                    "title": "Introduction to Independent Design",
+                    "goal": "Transfer ownership to the student — make the shift from guided to independent explicit",
+                    "what": "Teacher explains the unit expectations and the shift in role. Students understand that this project is theirs — the problem, the direction, the decisions. Discussion: what does it feel like to choose your own design challenge?",
+                    "activity": "Project Scope Exploration",
+                    "activityDetail": "Students explore three scales of problems: personal (affects me), community (affects my school or neighbourhood), and global (affects many people). List 3 problems at each scale. Identify which feels most meaningful and most solvable.",
+                    "outcome": "Students understand the scope of this unit and feel the weight — and excitement — of genuine autonomy."
+                  },
+                  {
+                    "number": 2,
+                    "title": "Identifying Problem Areas",
+                    "goal": "Students choose a real problem that matters to them personally",
+                    "what": "Students explore multiple problem areas — not to find the 'right' answer, but to find a direction they are genuinely curious about and motivated to address.",
+                    "activity": "Problem Discovery Mapping",
+                    "activityDetail": "Students map problems they have observed, experienced, or read about. For each: who is affected? How seriously? Is it designable? Discuss with a partner — which problem makes you want to do something about it?",
+                    "outcome": "A shortlist of 2–3 problem areas worth investigating further — chosen by the student, not assigned by the teacher."
+                  },
+                  {
+                    "number": 3,
+                    "title": "Refining the Problem",
+                    "goal": "Narrow from a broad topic to a specific, designable challenge",
+                    "what": "Students learn to avoid the trap of choosing topics that are too broad or too vague. A well-defined problem is specific, grounded in a real user, and connected to a real context.",
+                    "activity": "Problem Narrowing",
+                    "activityDetail": "Students take their shortlist and apply three filters: Is this specific enough to design a solution for? Do I have access to users or evidence? Is it achievable in 5–6 weeks? Narrow to one problem. Write a one-sentence problem focus.",
+                    "outcome": "One clearly scoped design challenge — specific, realistic, and personally meaningful."
+                  },
+                  {
+                    "number": 4,
+                    "title": "Research Planning",
+                    "goal": "Plan an independent research strategy before diving in",
+                    "what": "Students define what they need to know, how they will find it, and how they will know when they have enough. Independent research requires planning — not just Googling.",
+                    "activity": "Research Plan Creation",
+                    "activityDetail": "Students create a research plan with three columns: what I need to know, how I will find it (primary or secondary), and how I will record it. Plan must include at least two primary sources (interviews, observations) and two secondary sources.",
+                    "outcome": "A structured research plan that treats inquiry as a deliberate process — not a random activity."
+                  }
+                ]
+              },
+              {
+                "number": 2,
+                "title": "Research & Analysis",
+                "desc": "Students conduct independent research, build deep user understanding, synthesise what they find into insights, and produce a detailed design specification that will guide the rest of the project.",
+                "focus": "Moving from question → evidence → insight → specification",
+                "lessons": [
+                  {
+                    "number": 5,
+                    "title": "Conducting Research",
+                    "goal": "Gather evidence from real sources — primary and secondary",
+                    "what": "Students execute their research plan. Primary research may include peer interviews, observations, or surveys. Secondary research draws on articles, reports, or existing data. Quality over quantity.",
+                    "activity": "Primary / Secondary Research",
+                    "activityDetail": "Students conduct at least 2 primary research activities and review at least 2 secondary sources. For each: record what you found, what surprised you, and what questions it raised. No copy-pasting — summarise in your own words.",
+                    "outcome": "A body of evidence that is genuinely the student's own — gathered, not borrowed."
+                  },
+                  {
+                    "number": 6,
+                    "title": "User Understanding",
+                    "goal": "Build a deep, specific understanding of the target user",
+                    "what": "Students go beyond the generic 'user' to build a rich picture of the specific person their design will serve — their needs, behaviours, frustrations, and constraints.",
+                    "activity": "User Persona + Insights",
+                    "activityDetail": "Students create an advanced persona including: demographics, specific needs, key behaviours, main frustrations, and design constraints. Must be based on real research — not assumption. Include one direct quote from a primary source if possible.",
+                    "outcome": "A research-grounded persona that will keep the design human and specific — not abstract."
+                  },
+                  {
+                    "number": 7,
+                    "title": "Data Analysis",
+                    "goal": "Synthesise research into meaningful insights — not just a list of facts",
+                    "what": "Students review all their research and identify patterns, contradictions, and surprises. The goal is not to summarise what they found, but to draw conclusions that will shape design decisions.",
+                    "activity": "Insight Mapping",
+                    "activityDetail": "Students arrange all research findings and look for patterns. Write 3–5 insight statements in the format: 'I noticed that [observation], which suggests that [implication for design].' These become the foundation of the design specification.",
+                    "outcome": "3–5 sharp insight statements that directly inform the design specification."
+                  },
+                  {
+                    "number": 8,
+                    "title": "Problem Definition + Design Specification",
+                    "goal": "Write a detailed, testable specification grounded in research",
+                    "what": "Students write a refined problem statement and a comprehensive design specification. At MYP 5, the specification must be measurable, testable, and connected to real evidence.",
+                    "activity": "Design Specification Writing",
+                    "activityDetail": "Students write: a refined problem statement citing evidence, and 6–8 success criteria that are measurable and testable. Each criterion should trace back to an insight or research finding. Include constraints as explicit parameters.",
+                    "outcome": "A professional-level design specification — the most detailed they have written across the MYP journey."
+                  }
+                ]
+              },
+              {
+                "number": 3,
+                "title": "Ideation & Decision",
+                "desc": "Students generate ideas at the level of complexity their problem demands, develop the most promising concept in full detail, evaluate options rigorously, and produce a mature written justification.",
+                "focus": "Moving from divergent thinking → developed concept → evaluated decision → justified rationale",
+                "lessons": [
+                  {
+                    "number": 9,
+                    "title": "Idea Generation",
+                    "goal": "Generate a wide range of design ideas independently — without teacher prompting",
+                    "what": "Students generate ideas using divergent thinking strategies of their own choosing. At MYP 5, students are expected to select and apply ideation strategies independently.",
+                    "activity": "Divergent Thinking",
+                    "activityDetail": "Students choose their own ideation strategy (Crazy 8, SCAMPER, morphological chart, analogies). Generate at least 8 ideas. For each: a sketch and a sentence explaining how it addresses the user insight and problem statement.",
+                    "outcome": "A range of self-generated, insight-driven ideas — evidence of independent creative thinking."
+                  },
+                  {
+                    "number": 10,
+                    "title": "Concept Development",
+                    "goal": "Develop the most promising idea to a level of professional detail",
+                    "what": "Students select one idea and develop it to a level of maturity that demonstrates genuine design thinking — not just a sketch but a thought-through concept.",
+                    "activity": "Detailed Sketches",
+                    "activityDetail": "Students produce multiple annotated sketches showing: how it works in detail, materials and construction, user interaction, how it addresses each insight, and what constraints it operates within. At least 3 views or stages.",
+                    "outcome": "A concept developed to a level that could be shown to a real client or user for feedback."
+                  },
+                  {
+                    "number": 11,
+                    "title": "Idea Evaluation",
+                    "goal": "Evaluate all top ideas against the full design specification",
+                    "what": "Students apply their specification as an evaluation tool — rating each of their top 3 ideas against all criteria to identify the strongest direction.",
+                    "activity": "Evaluation Matrix",
+                    "activityDetail": "Rate top 3 ideas against all 6–8 specification criteria (1–5 scale). Include a weighting column — some criteria matter more than others for this specific user. The weighted total identifies the strongest idea.",
+                    "outcome": "A rigorous, evidence-based selection — not a personal preference."
+                  },
+                  {
+                    "number": 12,
+                    "title": "Final Concept Justification",
+                    "goal": "Write a mature, professional justification for the chosen design direction",
+                    "what": "Students write a detailed justification connecting every aspect of their chosen design to the research, insights, and specification. This is the most demanding piece of writing in the unit.",
+                    "activity": "Justification Writing",
+                    "activityDetail": "Students write 300–400 words: why this design, how it addresses each user insight, how it meets the specification criteria, what trade-offs were made and why, and what would change with more time or resources.",
+                    "outcome": "A professional-level design rationale — the kind of thinking that distinguishes MYP 5 from all prior years."
+                  }
+                ]
+              },
+              {
+                "number": 4,
+                "title": "Prototyping",
+                "desc": "Students plan their prototype strategy, build a functional solution, and test it with real or simulated users — documenting the process with professional attention.",
+                "focus": "Moving from concept → planned prototype → built solution → tested with users",
+                "lessons": [
+                  {
+                    "number": 13,
+                    "title": "Prototype Planning",
+                    "goal": "Plan the prototype before building — not during",
+                    "what": "Students think through the entire build process before touching materials. What fidelity is appropriate? What materials are needed? What is the build sequence? What could go wrong?",
+                    "activity": "Prototype Strategy",
+                    "activityDetail": "Students write a prototype plan: what they are building, what fidelity level is appropriate and why, materials list, build sequence in steps, and anticipated challenges with contingency plans.",
+                    "outcome": "A planned build — not an improvised one. Students learn that planning is part of professional making."
+                  },
+                  {
+                    "number": 14,
+                    "title": "Prototype Creation — Part 1",
+                    "goal": "Build the core structure and functionality of the solution",
+                    "what": "Students begin building according to their plan. Focus is on establishing the core function first — aesthetics come later if at all.",
+                    "activity": "Building Solution — Phase 1",
+                    "activityDetail": "Students build following their prototype plan. Document each stage with notes and photographs. Record any deviations from the plan and why they were made.",
+                    "outcome": "Core structure of the prototype complete — functional foundation established."
+                  },
+                  {
+                    "number": 15,
+                    "title": "Prototype Creation — Part 2",
+                    "goal": "Complete the prototype to a testable standard",
+                    "what": "Students complete the prototype to a state where it can be meaningfully tested. The goal is testability, not perfection.",
+                    "activity": "Building Solution — Phase 2",
+                    "activityDetail": "Continue building. Complete all components needed for testing. Label key features. Write a brief making reflection: what decisions were made during building, what changed from the plan, and why.",
+                    "outcome": "A complete, testable prototype — and a documented record of the making process."
+                  },
+                  {
+                    "number": 16,
+                    "title": "Testing",
+                    "goal": "Test the prototype with real or simulated users and document honest findings",
+                    "what": "Students conduct user testing — with real users where possible, simulated users where not. The designer observes without explaining or defending.",
+                    "activity": "User Testing",
+                    "activityDetail": "Set up a structured testing session: user receives the prototype with minimal instruction and uses it naturally. Designer observes and takes detailed notes. After: structured debrief. Document all findings — positive and negative equally.",
+                    "outcome": "Honest, user-sourced evidence of how the design performs — the foundation for evaluation."
+                  }
+                ]
+              },
+              {
+                "number": 5,
+                "title": "Iteration, Evaluation & Presentation",
+                "desc": "Students refine based on testing evidence, evaluate with genuine critical distance, reflect on their growth across the unit, and present the full project at a professional standard.",
+                "focus": "Moving from testing insights → refined solution → critical evaluation → professional presentation",
+                "lessons": [
+                  {
+                    "number": 17,
+                    "title": "Iteration",
+                    "goal": "Make evidence-based improvements — prioritised and justified",
+                    "what": "Students review all testing findings and identify the highest-priority improvement. They make that improvement and document the reasoning.",
+                    "activity": "Refinement",
+                    "activityDetail": "Students document: what testing revealed, which issue was prioritised for improvement and why, what change was made, and how it improves the design for the user. If multiple improvements were made, explain the prioritisation.",
+                    "outcome": "A refined solution with mature, evidence-based reasoning for every change."
+                  },
+                  {
+                    "number": 18,
+                    "title": "Evaluation",
+                    "goal": "Critically evaluate the final design with intellectual honesty",
+                    "what": "Students evaluate their design against every specification criterion — with evidence for each judgement. MYP 5 evaluation is not a celebration of what went well. It is an honest reckoning.",
+                    "activity": "Critical Evaluation",
+                    "activityDetail": "For each criterion: did the design meet it? What specific evidence supports this? What did not work as expected? What would change with more time, better materials, or access to real users? What is the broader impact of this design?",
+                    "outcome": "A mature, balanced evaluation — evidence of a student who can think critically about their own work."
+                  },
+                  {
+                    "number": 19,
+                    "title": "Reflection",
+                    "goal": "Reflect on the full design journey — not just the product",
+                    "what": "Students step back from the design itself and reflect on their growth as a designer and thinker across this unit and across the MYP Design journey.",
+                    "activity": "Process Reflection",
+                    "activityDetail": "Students write a personal reflection addressing: what was the most difficult moment in this project and what did it teach them, how has their design thinking changed since MYP 2, and what kind of designer do they want to become.",
+                    "outcome": "A genuine personal reflection — evidence of metacognition and long-term learning, not just project completion."
+                  },
+                  {
+                    "number": 20,
+                    "title": "Final Presentation",
+                    "goal": "Present the full independent design project at a professional standard",
+                    "what": "Students present the complete project journey to an audience — covering every stage from problem identification to final evaluation. This is their most significant design presentation.",
+                    "activity": "Professional Presentation",
+                    "activityDetail": "Students deliver a 7–10 minute presentation covering: the problem and why they chose it, research and insights, design decisions and justifications, prototype, testing findings, evaluation, and personal reflection. Audience asks 2–3 questions. Students respond without notes.",
+                    "outcome": "A professional presentation that demonstrates the full depth of a MYP 5 design student — thinking, making, reflecting, and communicating at the highest level."
+                  }
+                ]
+              }
+            ],
+            "assessment": [
+              { "criterion": "A", "focus": "Independent research, user analysis, and evidence-based problem definition", "tool": "Research Portfolio + Design Specification" },
+              { "criterion": "B", "focus": "Independent ideation, concept development, and professionally justified selection", "tool": "Design Journal" },
+              { "criterion": "C", "focus": "Planned, functional prototype with documented making process", "tool": "Prototype + Making Record" },
+              { "criterion": "D", "focus": "Critical, balanced evaluation against specification with personal reflection", "tool": "Evaluation Report + Reflection" }
+            ],
+            "successCriteria": [
+              "Identify and scope a real-world problem independently — specific, meaningful, and designable",
+              "Conduct structured primary and secondary research and synthesise findings into design insights",
+              "Write a detailed, measurable, testable design specification grounded in evidence",
+              "Generate a range of ideas independently and develop the strongest to a professional level of detail",
+              "Justify the chosen design direction with a 300–400 word rationale connecting research, insights, and specification",
+              "Build a functional prototype planned in advance and documented throughout",
+              "Test with real or simulated users and document honest findings",
+              "Evaluate against every specification criterion with evidence and critical honesty",
+              "Reflect meaningfully on personal growth as a designer across the full MYP journey",
+              "Present the full project professionally and respond to audience questions without notes"
+            ],
+            "differentiation": [
+              "Support: provide a structured project timeline, check-in milestones, and templates for specification and justification writing for students who need scaffolding",
+              "Advanced: encourage real-world user access, physical or digital prototyping beyond the classroom, and a second round of user testing after iteration",
+              "Language support: allow bilingual documentation, visual portfolios, or recorded presentations as alternatives to written and live formats"
+            ],
+            "atlSkills": ["Research Skills", "Critical Thinking", "Self-Management", "Communication"],
+            "realWorldConnection": "Students engage with real users, real constraints, and real impact — understanding that design is a tool for creating meaningful change in the world, not just a school subject.",
+            "progressionNote": "This unit is the culmination of a 5-year MYP Design progression. MYP 2 taught empathy and usability. MYP 3 introduced systems and social impact. MYP 4 added constraints and trade-offs. MYP 5 brings full independence — the student is now the designer, not the learner following instructions."
           },
           {
             "id": "reflective-mastery",
