@@ -413,11 +413,12 @@ function unitDetail(id) {
   }
   if (!unit||unit.status!=='full') { go('units'); return; }
 
-  // find associated lessons
   const assocLessons = D.demos.lessons.filter(l =>
-    l.grade === grade ||
     (unit.id === 'everyday-accessibility' && ['empathy-interview-lab'].includes(l.id))
   );
+
+  // check if unit has expanded lessons inside weeks
+  const hasLessons = unit.weeks && unit.weeks[0] && unit.weeks[0].lessons;
 
   set(`
     <section class="unit-detail-hero">
@@ -432,6 +433,7 @@ function unitDetail(id) {
         <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap">
           <span class="tag tag-grade">${grade}</span>
           <span class="tag tag-full">Full Unit</span>
+          <span class="tag">${unit.duration}</span>
         </div>
         <h1 style="margin-bottom:14px">${unit.title}</h1>
         <p style="font-size:1rem;font-style:italic;max-width:520px">"${unit.statementOfInquiry}"</p>
@@ -444,7 +446,25 @@ function unitDetail(id) {
       </div>
     </section>
 
+    ${unit.unitOverview ? `
     <section class="sec sec-white">
+      <div class="wrap">
+        <div class="sec-hdr"><span class="label">Unit Overview</span><h2>What this unit is about</h2></div>
+        <p style="max-width:640px;font-size:1rem;line-height:1.8">${unit.unitOverview}</p>
+        ${unit.realWorldConnection ? `
+        <div style="margin-top:24px;padding:16px 20px;background:var(--accent-lt);border-radius:var(--r-lg);max-width:640px">
+          <span class="label" style="margin-bottom:6px">Real-World Connection</span>
+          <p style="font-size:.9rem">${unit.realWorldConnection}</p>
+        </div>` : ''}
+        ${unit.summativeTask ? `
+        <div style="margin-top:16px;padding:16px 20px;background:var(--bg-alt);border-radius:var(--r-lg);max-width:640px;border:1px solid var(--border)">
+          <span class="label" style="margin-bottom:6px">Summative Task</span>
+          <p style="font-size:.9rem">${unit.summativeTask}</p>
+        </div>` : ''}
+      </div>
+    </section>` : ''}
+
+    <section class="sec sec-alt">
       <div class="wrap">
         <div class="sec-hdr"><span class="label">Lines of Inquiry</span><h2>Inquiry Questions</h2></div>
         <div class="inquiry-grid">
@@ -455,22 +475,43 @@ function unitDetail(id) {
       </div>
     </section>
 
-    <section class="sec sec-alt">
+    <section class="sec sec-white">
       <div class="wrap">
-        <div class="sec-hdr"><span class="label">Learning Process</span><h2>Week-by-Week Progression</h2></div>
-        <div class="weeks-grid">
-          ${unit.weeks.map(w=>`
-            <div class="card card-static week-card">
-              <span class="week-num">Week ${w.number}</span>
-              <h3>${w.title}</h3>
-              <p>${w.desc}</p>
-              <div class="week-focus">Focus: ${w.focus}</div>
-            </div>`).join('')}
-        </div>
+        <div class="sec-hdr"><span class="label">Lesson Sequence</span><h2>Week-by-Week Flow</h2></div>
+        ${unit.weeks.map(w=>`
+          <div style="margin-bottom:40px">
+            <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px;padding-bottom:14px;border-bottom:2px solid var(--accent-lt)">
+              <span style="font-family:var(--serif);font-size:1.5rem;color:var(--accent-mid);font-weight:400">W${w.number}</span>
+              <div>
+                <h3 style="font-family:var(--sans);font-weight:600;font-size:1rem;margin-bottom:2px">${w.title}</h3>
+                <p style="font-size:.8rem;color:var(--txt-3);margin:0">${w.focus}</p>
+              </div>
+            </div>
+            <p style="font-size:.9rem;margin-bottom:20px;max-width:600px">${w.desc}</p>
+            ${hasLessons && w.lessons ? `
+            <div style="display:flex;flex-direction:column;gap:12px">
+              ${w.lessons.map(l=>`
+                <div class="card card-static" style="padding:20px 24px">
+                  <div style="display:flex;align-items:flex-start;gap:16px">
+                    <div style="min-width:32px;height:32px;border-radius:50%;background:var(--accent-lt);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:var(--accent);flex-shrink:0">${l.number}</div>
+                    <div style="flex:1">
+                      <h4 style="font-family:var(--sans);font-weight:600;font-size:.95rem;margin-bottom:4px;color:var(--txt-1)">${l.title}</h4>
+                      <p style="font-size:.8rem;color:var(--accent);font-weight:500;margin-bottom:8px">Goal: ${l.goal}</p>
+                      <p style="font-size:.82rem;margin-bottom:12px">${l.what}</p>
+                      <div style="background:var(--bg-alt);border-radius:var(--r);padding:12px 14px;border-left:3px solid var(--accent)">
+                        <span style="font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);display:block;margin-bottom:4px">Activity — ${l.activity}</span>
+                        <p style="font-size:.8rem;margin:0">${l.activityDetail}</p>
+                      </div>
+                      <p style="font-size:.78rem;margin-top:10px;color:var(--success);font-weight:500">→ ${l.outcome}</p>
+                    </div>
+                  </div>
+                </div>`).join('')}
+            </div>` : ''}
+          </div>`).join('')}
       </div>
     </section>
 
-    <section class="sec sec-white">
+    <section class="sec sec-alt">
       <div class="wrap">
         <div class="two-col">
           <div>

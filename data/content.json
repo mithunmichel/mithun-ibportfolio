@@ -168,15 +168,17 @@
           {
             "id": "everyday-accessibility",
             "title": "Designing for Everyday Accessibility",
-            "desc": "Students identify accessibility challenges in their environment and develop human-centred solutions using the full MYP Design cycle.",
+            "desc": "Students explore how everyday objects may not work equally well for all users and learn to design improvements that enhance accessibility and usability — moving from observation to empathy to a real, tested solution.",
             "criteria": ["A", "B", "C", "D"],
             "focus": "Empathy",
-            "duration": "3 Weeks",
+            "duration": "3 Weeks · 12 Lessons",
             "status": "full",
             "keyConcept": "Development",
             "relatedConcepts": ["Function", "Innovation"],
             "globalContext": "Personal and Cultural Expression",
             "statementOfInquiry": "Design solutions reflect how individuals understand and respond to everyday challenges.",
+            "unitOverview": "This unit introduces students to the idea that design is not just about making things — it is about solving real human problems. Students explore how everyday objects may not work equally well for all users, and learn to design improvements that enhance accessibility and usability for elderly users, children, people with temporary injuries, and people with disabilities. Good design is inclusive design.",
+            "summativeTask": "Students identify an accessibility issue in an everyday object, define the problem clearly, generate multiple design ideas, create a prototype, and evaluate its effectiveness against their own design specifications.",
             "inquiryQuestions": {
               "factual": "What are common accessibility challenges in everyday objects?",
               "conceptual": "How does design influence usability?",
@@ -185,21 +187,135 @@
             "weeks": [
               {
                 "number": 1,
-                "title": "Investigate",
-                "desc": "Students observe real-life objects (school bags, desks, bottles) and identify usability challenges. They document findings through notes and simple analysis.",
-                "focus": "Noticing usability problems"
+                "title": "Inquiring & Analysing",
+                "desc": "Students are introduced to accessibility as a design lens. They interact with poorly designed objects, audit everyday items, understand different user types, and define a clear problem statement.",
+                "focus": "Moving from noticing → understanding → defining",
+                "lessons": [
+                  {
+                    "number": 1,
+                    "title": "Introduction to Accessibility",
+                    "goal": "Introduce the concept of accessibility in design",
+                    "what": "Students interact with poorly designed objects or examples, discuss frustration and usability, and begin to see design as something that affects human experience.",
+                    "activity": "Bad Design Reflection",
+                    "activityDetail": "Students interact with a poorly designed object and document: what was difficult to use, and why it failed the user.",
+                    "outcome": "Students realise that design affects experience — not just aesthetics."
+                  },
+                  {
+                    "number": 2,
+                    "title": "Observing Design Problems",
+                    "goal": "Identify real-world usability issues",
+                    "what": "Students examine 2–3 objects in the classroom or at home and identify usability challenges through structured observation.",
+                    "activity": "Design Audit",
+                    "activityDetail": "For each object: Who is the user? What is the problem? How could it be improved?",
+                    "outcome": "Students begin thinking like designers — observing before solving."
+                  },
+                  {
+                    "number": 3,
+                    "title": "Understanding Users",
+                    "goal": "Build empathy for different user types",
+                    "what": "Students are introduced to different user groups — elderly, children, people with temporary injuries, people with disabilities — and create simple user personas.",
+                    "activity": "Persona Creation",
+                    "activityDetail": "Students define: user type, their specific needs, and their limitations. One persona per student.",
+                    "outcome": "Shift from 'object thinking' to 'user thinking'."
+                  },
+                  {
+                    "number": 4,
+                    "title": "Defining the Problem",
+                    "goal": "Move from observation to a clear problem definition",
+                    "what": "Students convert their observations into structured problem statements using a guided template.",
+                    "activity": "Problem Statement Writing",
+                    "activityDetail": "Template: '[User] needs a way to [need] because [reason].' Students share and refine with a peer.",
+                    "outcome": "A clear, user-centred problem statement that will guide the rest of the unit."
+                  }
+                ]
               },
               {
                 "number": 2,
-                "title": "Develop Ideas",
-                "desc": "Students generate multiple design ideas through sketches and annotations. They compare options and justify their selected solution.",
-                "focus": "Idea generation and choice"
+                "title": "Developing Ideas",
+                "desc": "Students move from problem to possibility. They generate multiple design ideas rapidly, evaluate them logically, and define measurable success criteria for their chosen direction.",
+                "focus": "Moving from divergent thinking → evaluated choice → specification",
+                "lessons": [
+                  {
+                    "number": 5,
+                    "title": "Idea Generation",
+                    "goal": "Explore multiple solutions without filtering",
+                    "what": "Students sketch as many ideas as possible in a short time, prioritising quantity over quality to unlock divergent thinking.",
+                    "activity": "Crazy 8 Ideation",
+                    "activityDetail": "8 ideas sketched in 8 minutes. No judgement. Speed forces creativity.",
+                    "outcome": "A wide range of possible solutions — some expected, some surprising."
+                  },
+                  {
+                    "number": 6,
+                    "title": "Selecting the Best Idea",
+                    "goal": "Evaluate ideas logically and justify a decision",
+                    "what": "Students compare their ideas against usability and feasibility criteria and choose the most promising direction.",
+                    "activity": "Idea Evaluation Matrix",
+                    "activityDetail": "Rate each idea against: usability for the target user, and feasibility to build. Select and justify the highest-scoring idea.",
+                    "outcome": "Students practise decision-making with reasoning — not just instinct."
+                  },
+                  {
+                    "number": 7,
+                    "title": "Design Specification",
+                    "goal": "Define measurable success criteria before building",
+                    "what": "Students write a list of specific, measurable criteria that their final design must meet — creating their own evaluation framework.",
+                    "activity": "Specification Writing",
+                    "activityDetail": "Students list 4–6 measurable success criteria. Example: 'Can be operated with one hand', 'Suitable for users aged 60+'.",
+                    "outcome": "A clear specification that will be used in Lesson 11 to evaluate the final design."
+                  }
+                ]
               },
               {
                 "number": 3,
-                "title": "Create & Evaluate",
-                "desc": "Students create a basic prototype or representation of their solution. They present their work and reflect on its effectiveness, identifying areas for improvement.",
-                "focus": "Making and reflecting"
+                "title": "Creating & Evaluating",
+                "desc": "Students build, test, refine, and present. The focus is on the thinking behind each decision — not the polish of the final product.",
+                "focus": "Moving from idea → prototype → tested solution → reflection",
+                "lessons": [
+                  {
+                    "number": 8,
+                    "title": "Prototype Creation",
+                    "goal": "Build a first tangible version of the solution",
+                    "what": "Students create a low-fidelity prototype using simple materials — paper, cardboard, tape, clay. The goal is to make the idea testable, not perfect.",
+                    "activity": "Prototype Building",
+                    "activityDetail": "Build a working model using available materials. Focus on communicating function, not finish.",
+                    "outcome": "The idea becomes tangible — and testable."
+                  },
+                  {
+                    "number": 9,
+                    "title": "Testing and Feedback",
+                    "goal": "Understand how real users respond to the design",
+                    "what": "Students test each other's prototypes, role-playing as the target user. The designer observes silently and takes notes.",
+                    "activity": "Peer Testing",
+                    "activityDetail": "Tester uses the prototype and narrates their experience. Designer does not explain — only observes and documents.",
+                    "outcome": "Students see design flaws they couldn't see as the creator."
+                  },
+                  {
+                    "number": 10,
+                    "title": "Iteration and Improvement",
+                    "goal": "Improve the solution based on feedback",
+                    "what": "Students review their testing notes, identify the most important improvement to make, and refine their prototype.",
+                    "activity": "Iteration Improvement",
+                    "activityDetail": "Students document: what feedback they received, what they chose to change, and why that change improves the design.",
+                    "outcome": "A refined solution — and evidence of iterative thinking."
+                  },
+                  {
+                    "number": 11,
+                    "title": "Evaluation",
+                    "goal": "Reflect critically on the final design",
+                    "what": "Students compare their final design against the success criteria they wrote in Lesson 7 — and honestly assess what worked and what didn't.",
+                    "activity": "Evaluation Writing",
+                    "activityDetail": "For each specification criterion: Did the design meet it? What evidence supports this? What would you do differently?",
+                    "outcome": "Students understand the difference between a successful process and a successful product."
+                  },
+                  {
+                    "number": 12,
+                    "title": "Final Presentation",
+                    "goal": "Communicate the design process and thinking clearly",
+                    "what": "Students present their full design journey — problem, user, ideas, prototype, testing, and reflection — to the class.",
+                    "activity": "Presentation",
+                    "activityDetail": "Each student presents: the problem they identified, the user they designed for, their chosen solution, what they tested, and what they learned.",
+                    "outcome": "Clarity, confidence, and the ability to articulate design thinking — not just show a product."
+                  }
+                ]
               }
             ],
             "assessment": [
@@ -209,16 +325,20 @@
               { "criterion": "D", "focus": "Reflection and evaluation", "tool": "Reflection Essay" }
             ],
             "successCriteria": [
-              "Identify a real-world problem with clarity",
-              "Develop multiple design ideas through sketching",
-              "Justify their chosen solution against a design brief",
-              "Reflect meaningfully on strengths and limitations"
+              "Identify a real-world accessibility problem with clarity and evidence",
+              "Demonstrate empathy by designing for a specific user type",
+              "Generate multiple design ideas and justify the chosen direction",
+              "Create a low-fidelity prototype that communicates function",
+              "Test the design with a peer and document honest findings",
+              "Evaluate the final design against self-defined success criteria"
             ],
             "differentiation": [
-              "Provide structured templates for students who require additional support",
-              "Encourage open-ended exploration and deeper user research for advanced learners"
+              "Provide structured templates for problem statements, personas, and evaluation for students who need additional support",
+              "Encourage open-ended user research, deeper specification writing, and self-directed iteration for advanced learners",
+              "Allow oral explanation as an alternative to written reflection for students with language barriers"
             ],
-            "atlSkills": ["Communication", "Critical Thinking", "Collaboration"]
+            "atlSkills": ["Communication", "Critical Thinking", "Collaboration", "Research Skills"],
+            "realWorldConnection": "Students explore how design impacts elderly users, children, people with temporary injuries, and people with disabilities — understanding that inclusive design is good design."
           },
           {
             "id": "community-wayfinding",
