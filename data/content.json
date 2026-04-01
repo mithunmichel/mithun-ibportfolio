@@ -592,13 +592,234 @@
         "theme": "Designing with Constraints",
         "units": [
           {
-            "id": "material-limitations",
-            "title": "Material Limitations",
-            "desc": "A rigorous exploration of structural engineering using only biodegradable polymers and recycled paper.",
-            "criteria": ["A", "B"],
-            "focus": "Analysis",
-            "duration": "10 Weeks",
-            "status": "outline"
+            "id": "designing-under-constraints",
+            "title": "Designing Under Constraints",
+            "desc": "Students confront the reality that design never happens in ideal conditions. Working within material, time, user, and environmental constraints, they learn that good design is not just creative — it is strategic decision-making under pressure.",
+            "criteria": ["A", "B", "C", "D"],
+            "focus": "Strategic Thinking",
+            "duration": "4–5 Weeks · 16–18 Lessons",
+            "status": "full",
+            "keyConcept": "Development",
+            "relatedConcepts": ["Function", "Sustainability", "Systems"],
+            "globalContext": "Scientific and Technical Innovation",
+            "statementOfInquiry": "Effective design solutions emerge through managing constraints, optimising resources, and making informed decisions.",
+            "unitOverview": "This unit introduces students to the reality that design does not happen in ideal conditions. Real-world design always involves trade-offs — limited materials, restricted budgets, specific user needs, and environmental considerations. Students learn to see constraints not as obstacles but as the conditions that force better, more innovative thinking. The central insight: constraints shape innovation.",
+            "summativeTask": "Students design a solution to a given challenge under strict constraints (limited materials, budget restriction, specific user needs, or time limitation). They must analyse constraints, generate ideas within limits, justify every decision, prototype efficiently, and evaluate how well the solution addresses the constraints it was given.",
+            "inquiryQuestions": {
+              "factual": "What are common constraints in design projects?",
+              "conceptual": "How do constraints influence design decisions?",
+              "debatable": "Do constraints limit creativity or enhance it?"
+            },
+            "weeks": [
+              {
+                "number": 1,
+                "title": "Understanding Constraints",
+                "desc": "Students are introduced to the concept of constraints as a design reality. They shift their mindset from 'anything is possible' to 'good design works within limits'. They analyse real-world examples, classify constraint types, and identify a constrained problem to work on.",
+                "focus": "Shifting mindset: constraints as conditions, not obstacles",
+                "lessons": [
+                  {
+                    "number": 1,
+                    "title": "Introduction to Constraints in Design",
+                    "goal": "Shift student mindset — constraints are not obstacles, they are conditions",
+                    "what": "Discussion on real-world design limitations. Students explore examples where constraints led to better solutions — not worse ones.",
+                    "activity": "Constraint Brainstorm",
+                    "activityDetail": "Students list every constraint they can think of that limits design: materials, cost, time, user ability, environment, regulation. Group into categories on a shared board.",
+                    "outcome": "Students understand that every real design project operates under constraints — and that this is normal, not exceptional."
+                  },
+                  {
+                    "number": 2,
+                    "title": "Types of Constraints",
+                    "goal": "Identify and categorise the main types of design constraints",
+                    "what": "Students learn to classify constraints into four categories: material, time, cost, and user — and understand how each type shapes design differently.",
+                    "activity": "Constraint Classification",
+                    "activityDetail": "Students are given 20 constraint examples and sort them into the four categories. Then identify which category is hardest to work around and justify why.",
+                    "outcome": "Students have a working vocabulary for constraint types — they can name and categorise the limits they are working within."
+                  },
+                  {
+                    "number": 3,
+                    "title": "Case Study Analysis",
+                    "goal": "Learn from real-world examples of constrained design",
+                    "what": "Students analyse 2 real-world design case studies where constraints shaped the final outcome — e.g. a low-cost prosthetic limb, a flat-pack furniture system, a disposable medical device.",
+                    "activity": "Case Study Breakdown",
+                    "activityDetail": "For each case study: What constraints existed? How did the designer respond? What trade-offs were made? What would have been different without the constraints?",
+                    "outcome": "Students see constraints as design inputs — not limitations to work around, but conditions to design within."
+                  },
+                  {
+                    "number": 4,
+                    "title": "Problem Exploration",
+                    "goal": "Identify a constrained design challenge to work on for the unit",
+                    "what": "Students select or are assigned a design challenge with explicit constraints. They frame the challenge clearly — problem + constraints stated together.",
+                    "activity": "Challenge Framing",
+                    "activityDetail": "Students write a challenge statement: 'Design a [solution] for [user] that must work within [constraint 1], [constraint 2], and [constraint 3].' Peer review for clarity.",
+                    "outcome": "A clear, constrained challenge statement that will drive the rest of the unit."
+                  }
+                ]
+              },
+              {
+                "number": 2,
+                "title": "Defining & Planning",
+                "desc": "Students move from understanding constraints in general to mapping the specific constraints of their challenge. They research context, define the problem precisely, map every constraint explicitly, and write success criteria that include constraint-awareness.",
+                "focus": "Moving from challenge → researched context → explicit constraint map → specification",
+                "lessons": [
+                  {
+                    "number": 5,
+                    "title": "Research and Context Analysis",
+                    "goal": "Understand the environment and users the design must serve",
+                    "what": "Students research the context of their design challenge — who uses it, where it is used, what already exists, and why existing solutions fall short.",
+                    "activity": "Context Mapping",
+                    "activityDetail": "Students map: the environment of use, the primary user and their specific needs, existing solutions and their shortcomings, and key contextual factors that will affect design decisions.",
+                    "outcome": "A clear picture of the context — so design decisions are grounded in evidence, not assumption."
+                  },
+                  {
+                    "number": 6,
+                    "title": "Defining the Design Problem",
+                    "goal": "Write a precise problem statement that includes constraints",
+                    "what": "Students synthesise their context research into a refined problem statement that names the user, the need, and the specific constraints that make it challenging.",
+                    "activity": "Refined Problem Statement",
+                    "activityDetail": "Structure: '[User] needs [solution] that [addresses need] within [constraint 1] and [constraint 2], because [root reason].' Peer review for precision.",
+                    "outcome": "A problem statement that already signals constraint-awareness — not just user-need."
+                  },
+                  {
+                    "number": 7,
+                    "title": "Constraint Mapping",
+                    "goal": "Explicitly define and evaluate every constraint in the challenge",
+                    "what": "Students create a constraint matrix — listing every constraint, categorising it, and assessing its impact on design decisions.",
+                    "activity": "Constraint Matrix",
+                    "activityDetail": "For each constraint: name it, categorise it (material / time / cost / user), rate its impact (high / medium / low), and identify what it rules out and what it still allows.",
+                    "outcome": "Students have a complete map of their design space — they know exactly what they can and cannot do."
+                  },
+                  {
+                    "number": 8,
+                    "title": "Design Specification",
+                    "goal": "Define measurable success criteria that reflect constraint requirements",
+                    "what": "Students write success criteria that go beyond function — including criteria that specifically address the constraints they are working within.",
+                    "activity": "Success Criteria Writing",
+                    "activityDetail": "Write 5–7 success criteria. At least 2 must directly address a constraint (e.g. 'uses only the provided materials', 'buildable in under 20 minutes'). Include 2–3 constraints as explicit parameters.",
+                    "outcome": "A specification that will hold the design accountable to its constraints — not just its function."
+                  }
+                ]
+              },
+              {
+                "number": 3,
+                "title": "Ideation & Decision Making",
+                "desc": "Students generate ideas specifically within their constraints — not despite them. They develop the most promising concept, analyse trade-offs honestly, and justify their final design decision.",
+                "focus": "Moving from constrained ideas → developed concept → trade-off analysis → justified decision",
+                "lessons": [
+                  {
+                    "number": 9,
+                    "title": "Idea Generation Under Constraints",
+                    "goal": "Generate ideas that work within limits — not around them",
+                    "what": "Students brainstorm solutions with their constraint matrix visible at all times. Every idea must acknowledge its constraints explicitly.",
+                    "activity": "Constrained Brainstorming",
+                    "activityDetail": "Generate at least 6 ideas. For each: sketch the idea and annotate how it addresses the main constraints. Ideas that ignore constraints are flagged — not discarded, but reconsidered.",
+                    "outcome": "A set of ideas that are genuinely constraint-aware — not wishful thinking."
+                  },
+                  {
+                    "number": 10,
+                    "title": "Concept Development",
+                    "goal": "Develop the most promising idea into a detailed, constraint-aware concept",
+                    "what": "Students select one idea and develop it fully — detailing materials, construction, use, and how each constraint is addressed.",
+                    "activity": "Detailed Sketching",
+                    "activityDetail": "Produce a detailed annotated sketch showing: how it functions, what materials are used and why, how each constraint is managed, and what trade-offs are being made.",
+                    "outcome": "A developed concept that proves the design can work within its constraints."
+                  },
+                  {
+                    "number": 11,
+                    "title": "Trade-off Analysis",
+                    "goal": "Understand and articulate the compromises being made",
+                    "what": "Students analyse the trade-offs in their chosen design — what is gained, what is sacrificed, and whether the trade-off is justified.",
+                    "activity": "Pros vs Cons Analysis",
+                    "activityDetail": "For the chosen design: list what is gained (functionality, efficiency, accessibility) and what is lost (aesthetics, durability, flexibility). Justify why the gains outweigh the losses for this specific user and context.",
+                    "outcome": "Students practise honest design thinking — acknowledging imperfection while defending decisions."
+                  },
+                  {
+                    "number": 12,
+                    "title": "Final Concept Selection",
+                    "goal": "Commit to and fully justify the chosen design direction",
+                    "what": "Students write a formal justification explaining why their chosen design is the best response to the challenge given its constraints.",
+                    "activity": "Justification Writing",
+                    "activityDetail": "Students write 200–300 words: why this solution, how it addresses each constraint, what trade-offs were made and why they are acceptable, and what would change with fewer constraints.",
+                    "outcome": "A clear, mature design rationale — the kind IB assessors look for in Criterion B."
+                  }
+                ]
+              },
+              {
+                "number": 4,
+                "title": "Creation & Testing",
+                "desc": "Students build efficiently within their constraints, test under realistic conditions, refine based on evidence, and evaluate how well the final design holds up against its specifications.",
+                "focus": "Moving from concept → efficient prototype → tested solution → constraint evaluation",
+                "lessons": [
+                  {
+                    "number": 13,
+                    "title": "Prototype Creation",
+                    "goal": "Build a prototype that demonstrates the design working within its constraints",
+                    "what": "Students build a prototype using only the materials and time allowed. The constraint is part of the making — not suspended during it.",
+                    "activity": "Efficient Prototyping",
+                    "activityDetail": "Build using only the specified materials. Time is tracked. Document decisions made during making — especially moments where the constraint forced a change of approach.",
+                    "outcome": "A prototype built within constraints — and a record of how constraints shaped the making process."
+                  },
+                  {
+                    "number": 14,
+                    "title": "Testing Under Constraints",
+                    "goal": "Test the prototype under realistic conditions — not ideal ones",
+                    "what": "Students simulate the real-world conditions the design will face. Testing is not just 'does it work?' but 'does it work for this user in this context?'",
+                    "activity": "Simulated Real-World Testing",
+                    "activityDetail": "Set up realistic test conditions based on context mapping. Tester role-plays as the target user. Designer observes and notes: what worked, what failed, where constraints created problems.",
+                    "outcome": "Evidence of how the design performs in its intended context — not just in ideal lab conditions."
+                  },
+                  {
+                    "number": 15,
+                    "title": "Iteration",
+                    "goal": "Improve the solution while remaining within constraints",
+                    "what": "Students identify one meaningful improvement from testing and implement it — without violating their constraints. This forces prioritisation.",
+                    "activity": "Refinement Cycle",
+                    "activityDetail": "Students document: what feedback they received, what improvement they chose to make, why, and how they made it without exceeding the constraints. If a constraint had to flex, explain why.",
+                    "outcome": "A refined solution — and evidence of disciplined, constraint-aware iteration."
+                  },
+                  {
+                    "number": 16,
+                    "title": "Evaluation Against Constraints",
+                    "goal": "Evaluate the final design specifically against its constraints",
+                    "what": "Students compare the final design to their success criteria — with special focus on how well the design managed its constraints.",
+                    "activity": "Evaluation Against Constraints",
+                    "activityDetail": "For each success criterion: did the design meet it? What evidence supports this? For each constraint: was it respected? If not, why not? What would change with more time or different constraints?",
+                    "outcome": "A mature evaluation that addresses constraint management — not just product quality."
+                  },
+                  {
+                    "number": 17,
+                    "title": "Final Presentation",
+                    "goal": "Present the design journey with emphasis on constraint management and decision-making",
+                    "what": "Students present their full process — with specific focus on how constraints shaped every decision, what trade-offs were made, and what they would do differently.",
+                    "activity": "Presentation + Justification",
+                    "activityDetail": "5–7 minute presentation covering: the challenge and its constraints, key decisions made because of constraints, the prototype, testing findings, and evaluation. Class asks one question per presenter.",
+                    "outcome": "Students can articulate design thinking under pressure — a real-world professional skill."
+                  }
+                ]
+              }
+            ],
+            "assessment": [
+              { "criterion": "A", "focus": "Context research and constraint analysis", "tool": "Constraint Matrix + Context Map" },
+              { "criterion": "B", "focus": "Constrained ideation, trade-off analysis, and justified selection", "tool": "Design Journal" },
+              { "criterion": "C", "focus": "Efficient prototype built within stated constraints", "tool": "Prototype + Making Record" },
+              { "criterion": "D", "focus": "Evaluation against constraints and success criteria", "tool": "Evaluation Report" }
+            ],
+            "successCriteria": [
+              "Identify and categorise all constraints in the design challenge",
+              "Research context and user needs that inform design decisions",
+              "Generate ideas that explicitly work within constraints — not around them",
+              "Analyse trade-offs honestly and justify the chosen design direction",
+              "Build a prototype using only specified materials and within time limits",
+              "Test under realistic conditions and document honest findings",
+              "Evaluate the final design against both functional criteria and constraint requirements"
+            ],
+            "differentiation": [
+              "Support: provide pre-structured constraint matrix, context map template, and justification sentence starters for students who need scaffolding",
+              "Advanced: assign tighter constraints, require trade-off analysis across three competing criteria, and challenge students to propose how constraints could be changed to improve the outcome",
+              "Language support: allow annotated visual presentations or recorded explanations as alternatives to written evaluation"
+            ],
+            "atlSkills": ["Self-Management", "Critical Thinking", "Communication", "Transfer Skills"],
+            "realWorldConnection": "Real-world design is never ideal. Every professional designer works within budgets, material limits, regulatory requirements, and time pressures. This unit brings that reality into the classroom.",
+            "progressionNote": "This unit builds on MYP 3 systems thinking by adding the dimension of constraint management. Students must now not only consider multiple stakeholders but also work within explicit limits — moving closer to the conditions of the MYP 5 Personal Design Project."
           },
           {
             "id": "urban-nexus",
