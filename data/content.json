@@ -356,21 +356,233 @@
         "theme": "Systems Thinking",
         "units": [
           {
+            "id": "social-impact-design",
+            "title": "Designing for Social Impact",
+            "desc": "Students move beyond individual usability to explore how design can solve community problems, address inequality, and improve everyday systems — shifting the question from 'does this work?' to 'who does this work for, and who is excluded?'",
+            "criteria": ["A", "B", "C", "D"],
+            "focus": "Systems Thinking",
+            "duration": "4 Weeks · 14–16 Lessons",
+            "status": "full",
+            "keyConcept": "Systems",
+            "relatedConcepts": ["Function", "Sustainability", "Innovation"],
+            "globalContext": "Globalization and Sustainability",
+            "statementOfInquiry": "Design solutions influence systems by addressing real-world challenges and shaping sustainable outcomes.",
+            "unitOverview": "This unit shifts students from individual usability to broader social impact. Students explore how design can solve community problems, address inequality, and improve everyday systems. The central question is no longer just 'does this work?' but 'who does this work for, and who is excluded?' Students investigate real community issues — waste, navigation, safety, accessibility — and design solutions that consider multiple stakeholders and systemic consequences.",
+            "summativeTask": "Students design a solution addressing a real-world community issue (such as waste management, public navigation, safety, or accessibility). They must investigate context, define a clear problem, develop justified ideas, create a prototype, and evaluate its broader impact.",
+            "inquiryQuestions": {
+              "factual": "What are common design problems in communities?",
+              "conceptual": "How can design influence systems and behaviour?",
+              "debatable": "Can design truly solve social problems?"
+            },
+            "weeks": [
+              {
+                "number": 1,
+                "title": "Inquiry & System Understanding",
+                "desc": "Students are introduced to design as a systems-level activity. They map real community problems, understand how systems work, observe real issues, and identify the multiple stakeholders affected.",
+                "focus": "Moving from object thinking → systems thinking → stakeholder awareness",
+                "lessons": [
+                  {
+                    "number": 1,
+                    "title": "Introduction to Social Impact Design",
+                    "goal": "Understand design beyond objects — as a tool for social change",
+                    "what": "Discussion on real-world problems — waste, transport, accessibility. Students see examples of design that changed systems, not just products.",
+                    "activity": "Problem Mapping",
+                    "activityDetail": "Students list community issues they observe or experience — waste, accessibility, safety, navigation. Map them on a shared board to find patterns.",
+                    "outcome": "Students begin to see design as a system-level discipline, not just product creation."
+                  },
+                  {
+                    "number": 2,
+                    "title": "Understanding Systems",
+                    "goal": "Introduce systems thinking as a design lens",
+                    "what": "Students learn to identify the components of a system — inputs, processes, outputs — and understand how changing one part affects the whole.",
+                    "activity": "System Mapping",
+                    "activityDetail": "Students choose a familiar system (school canteen, local bus route, classroom waste) and map its inputs, processes, and outputs. Identify where problems occur.",
+                    "outcome": "Students understand that complexity is normal — and that design must account for it."
+                  },
+                  {
+                    "number": 3,
+                    "title": "Observing Community Problems",
+                    "goal": "Identify real-world issues through structured observation",
+                    "what": "Students conduct a field observation or case study of a community problem — in school or the immediate environment.",
+                    "activity": "Field Observation / Case Study",
+                    "activityDetail": "Students document: what happens in the system, who is affected, what the consequences are, and what has already been tried. Use photographs, notes, or sketches.",
+                    "outcome": "Students identify a specific community problem grounded in real evidence — not assumption."
+                  },
+                  {
+                    "number": 4,
+                    "title": "Understanding Stakeholders",
+                    "goal": "Move beyond 'the user' to see multiple affected parties",
+                    "what": "Students map all the people affected by a problem — not just the primary user but secondary users, decision makers, and those indirectly impacted.",
+                    "activity": "Stakeholder Mapping",
+                    "activityDetail": "Students identify: primary users (most directly affected), secondary users (indirectly affected), and decision makers (who controls the system). Map relationships between them.",
+                    "outcome": "Students see that design decisions affect many people — and that inclusion requires deliberate thought."
+                  }
+                ]
+              },
+              {
+                "number": 2,
+                "title": "Defining & Researching",
+                "desc": "Students move from observation to structured research. They plan how to gather evidence, collect real data, define a complex problem precisely, and set measurable success criteria.",
+                "focus": "Moving from observation → structured research → precise problem definition",
+                "lessons": [
+                  {
+                    "number": 5,
+                    "title": "Research Methods",
+                    "goal": "Plan structured research to understand the problem deeply",
+                    "what": "Students learn the difference between primary research (interviews, surveys, observation) and secondary research (existing data, reports). They plan what they need to find out and how.",
+                    "activity": "Primary vs Secondary Research Planning",
+                    "activityDetail": "Students create a research plan: what do I need to know? Who can I ask? What already exists? What will I do myself? Plan must include at least one primary and one secondary source.",
+                    "outcome": "Students approach research as a structured process — not random searching."
+                  },
+                  {
+                    "number": 6,
+                    "title": "Data Collection",
+                    "goal": "Gather real insights from people and sources",
+                    "what": "Students conduct their planned research — simulating interviews or surveys within the classroom, and reviewing secondary sources.",
+                    "activity": "Survey / Interview Simulation",
+                    "activityDetail": "Students conduct peer interviews using 5 prepared questions about their chosen community problem. Record responses. Identify patterns across 3+ responses.",
+                    "outcome": "Students have real evidence to support their problem definition — not just opinion."
+                  },
+                  {
+                    "number": 7,
+                    "title": "Problem Definition",
+                    "goal": "Define a complex, multi-stakeholder problem with precision",
+                    "what": "Students synthesise their research into a refined problem statement that captures the system, the affected people, and the root cause.",
+                    "activity": "Refined Problem Statement",
+                    "activityDetail": "Students write a problem statement that goes beyond the symptom. Structure: '[System/context] fails [stakeholder group] because [root cause], resulting in [consequence].'",
+                    "outcome": "A precise, evidence-based problem statement that will drive the rest of the unit."
+                  },
+                  {
+                    "number": 8,
+                    "title": "Success Criteria",
+                    "goal": "Define measurable impact — not just product quality",
+                    "what": "Students write success criteria that reflect both product function and social impact. They also define constraints — what limits their design.",
+                    "activity": "Specification Writing",
+                    "activityDetail": "Students list 5–7 success criteria and 2–3 constraints. At least two criteria must address social impact beyond function (e.g. 'accessible to users with limited mobility', 'replicable without specialist tools').",
+                    "outcome": "A specification that measures impact, not just aesthetics or function."
+                  }
+                ]
+              },
+              {
+                "number": 3,
+                "title": "Ideation & Development",
+                "desc": "Students generate ideas at a systems level, develop the most promising concept in detail, evaluate options rigorously, and justify their final design direction.",
+                "focus": "Moving from divergent ideas → developed concept → justified decision",
+                "lessons": [
+                  {
+                    "number": 9,
+                    "title": "Idea Generation",
+                    "goal": "Generate a range of system-level solutions — not just product fixes",
+                    "what": "Students brainstorm solutions that address the root cause — not just the symptom. Encouraged to think at different scales: individual, community, system.",
+                    "activity": "Brainstorming + Sketching",
+                    "activityDetail": "Generate at least 6 ideas across different scales. Sketch each with a brief annotation. Avoid fixating on one idea too early.",
+                    "outcome": "A range of possible approaches — some practical, some ambitious, all evidence-based."
+                  },
+                  {
+                    "number": 10,
+                    "title": "Concept Development",
+                    "goal": "Develop the most promising idea into a detailed concept",
+                    "what": "Students select one idea and develop it fully — sketching detail, considering materials, and explaining how it addresses each stakeholder.",
+                    "activity": "Detailed Design Sketch",
+                    "activityDetail": "Students produce an annotated design sketch showing: how it works, who it serves, what materials it needs, and how it fits into the existing system.",
+                    "outcome": "A developed concept ready for evaluation — not just a rough sketch."
+                  },
+                  {
+                    "number": 11,
+                    "title": "Idea Evaluation",
+                    "goal": "Evaluate all ideas rigorously before committing to one",
+                    "what": "Students compare their top 3 ideas against their success criteria — including social impact criteria.",
+                    "activity": "Evaluation Matrix",
+                    "activityDetail": "Rate each idea against all success criteria (1–3 scale). Include at least one social impact criterion. The highest-scoring idea becomes the working design.",
+                    "outcome": "A defensible, criteria-based decision — not a personal preference."
+                  },
+                  {
+                    "number": 12,
+                    "title": "Final Design Selection",
+                    "goal": "Commit to and justify the chosen design direction",
+                    "what": "Students write a justification that connects their chosen design to the problem, stakeholders, and success criteria.",
+                    "activity": "Justification Writing",
+                    "activityDetail": "Students write 200–300 words explaining: why this design, how it addresses the root cause, which stakeholders it serves, and what trade-offs were made.",
+                    "outcome": "Students practise the IB expectation of justification — reasoning, not just describing."
+                  }
+                ]
+              },
+              {
+                "number": 4,
+                "title": "Prototyping & Evaluating",
+                "desc": "Students build, test, refine, and present their solution — always returning to the question of impact, not just function.",
+                "focus": "Moving from concept → prototype → tested solution → impact evaluation",
+                "lessons": [
+                  {
+                    "number": 13,
+                    "title": "Prototype Creation",
+                    "goal": "Build a prototype that communicates the system-level solution",
+                    "what": "Students build a low-to-mid fidelity prototype. For system solutions this may include diagrams, models, or service blueprints — not always a physical object.",
+                    "activity": "Prototype Building",
+                    "activityDetail": "Build a prototype appropriate to the solution type: physical model, poster system, process diagram, or interactive mock-up. Must show how it functions within the system.",
+                    "outcome": "A testable representation of the solution — at whatever fidelity fits the problem."
+                  },
+                  {
+                    "number": 14,
+                    "title": "Testing with Users",
+                    "goal": "Understand whether the solution works for real people in context",
+                    "what": "Students simulate user testing — peers role-play as the target stakeholder group and provide structured feedback.",
+                    "activity": "User Testing Simulation",
+                    "activityDetail": "Tester role-plays as a primary stakeholder. Designer observes and notes: what worked, what confused them, what was missing. Debrief using: I noticed / I wondered / What if.",
+                    "outcome": "Evidence-based insight into how the solution performs — and where it fails."
+                  },
+                  {
+                    "number": 15,
+                    "title": "Iteration",
+                    "goal": "Improve the solution based on evidence",
+                    "what": "Students identify the most critical gap revealed by testing and make one meaningful improvement — documenting their reasoning.",
+                    "activity": "Improvement Cycle",
+                    "activityDetail": "Students document: what feedback they received, which gap they chose to address and why, what change they made, and how it improves the design for the stakeholder.",
+                    "outcome": "A refined solution with evidence of responsive, evidence-based thinking."
+                  },
+                  {
+                    "number": 16,
+                    "title": "Evaluation & Presentation",
+                    "goal": "Reflect on impact and communicate the full design journey",
+                    "what": "Students evaluate their solution against all success criteria — including social impact — and present the full design process to the class.",
+                    "activity": "Final Reflection + Presentation",
+                    "activityDetail": "Evaluation: for each criterion, did the design meet it? What is the evidence? What would change with more time or resources? Presentation: 5 minutes covering problem, stakeholders, solution, testing, and impact.",
+                    "outcome": "Students can articulate not just what they made, but what difference it makes — and what they would do differently."
+                  }
+                ]
+              }
+            ],
+            "assessment": [
+              { "criterion": "A", "focus": "Community problem research and stakeholder analysis", "tool": "Research Portfolio" },
+              { "criterion": "B", "focus": "Idea generation, evaluation, and justified selection", "tool": "Design Journal" },
+              { "criterion": "C", "focus": "Prototype development appropriate to the solution type", "tool": "Process Documentation" },
+              { "criterion": "D", "focus": "Impact evaluation against social and functional criteria", "tool": "Evaluation Report" }
+            ],
+            "successCriteria": [
+              "Identify a real community problem supported by research evidence",
+              "Map all relevant stakeholders and explain how the problem affects each",
+              "Generate multiple design ideas at different scales and justify a chosen direction",
+              "Create a prototype appropriate to the solution type that communicates function within a system",
+              "Test the solution with a peer and document honest, specific findings",
+              "Evaluate impact against both functional and social success criteria",
+              "Reflect on what worked, what failed, and what would change with more time"
+            ],
+            "differentiation": [
+              "Support: provide pre-structured research templates, stakeholder maps, and problem statement frameworks for students who need scaffolding",
+              "Advanced: encourage independent community outreach, multi-stakeholder interviews, and systems diagrams that show second-order effects",
+              "Language support: allow visual presentations, annotated diagrams, or recorded explanations as alternatives to written evaluation"
+            ],
+            "atlSkills": ["Research Skills", "Critical Thinking", "Communication", "Self-Management"],
+            "realWorldConnection": "Students explore how systems affect people, why some design solutions fail despite good intentions, and how design decisions create ripple effects across communities.",
+            "progressionNote": "This unit intentionally raises the bar from MYP 2. Students work with less guidance, tackle more complex problems, justify decisions against social impact criteria, and present to the class rather than just a partner."
+          },
+          {
             "id": "circular-economy",
             "title": "Circular Economy Systems",
             "desc": "Moving beyond product design to design entire lifecycles for consumer products, ensuring zero waste.",
             "criteria": ["A", "B", "C", "D"],
             "focus": "Critical Thinking",
             "duration": "9 Weeks",
-            "status": "outline"
-          },
-          {
-            "id": "smart-habitats",
-            "title": "Smart Habitats",
-            "desc": "Applying automated systems and basic electronics to solve specific environmental challenges in the classroom.",
-            "criteria": ["B", "C"],
-            "focus": "Transfer",
-            "duration": "8 Weeks",
             "status": "outline"
           }
         ]
