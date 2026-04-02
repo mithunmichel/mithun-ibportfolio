@@ -566,27 +566,18 @@ function unitDetail(id) {
         <div class="two-col">
           <div>
             <span class="label">Assessment Strategy</span>
-            <h2 style="margin-bottom:4px">Criteria Overview</h2>
-            <table class="crit-table">
-              <thead><tr><th>Criterion</th><th>Focus</th><th>Tool</th></tr></thead>
-              <tbody>
-                ${unit.assessment.map(a=>`
-                  <tr>
-                    <td><span class="crit-badge">${a.criterion}</span></td>
-                    <td>${a.focus}</td>
-                    <td><span class="tag">${a.tool}</span></td>
-                  </tr>`).join('')}
-              </tbody>
-            </table>
-            ${unit.assessment.some(a=>a.alignment) ? `
-            <div style="margin-top:20px">
-              <span class="label" style="margin-bottom:10px">Assessment Alignment</span>
-              ${unit.assessment.filter(a=>a.alignment).map(a=>`
-                <div style="display:flex;gap:10px;margin-bottom:10px;font-size:.8rem;color:var(--txt-2)">
-                  <span class="crit-badge" style="flex-shrink:0;margin-top:1px">${a.criterion}</span>
-                  <span style="line-height:1.6">${a.alignment}</span>
+            <h2 style="margin-bottom:16px">Criteria Overview</h2>
+            <div style="display:flex;flex-direction:column;gap:10px">
+              ${unit.assessment.map(a=>`
+                <div style="display:flex;gap:14px;padding:14px 16px;background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);align-items:flex-start">
+                  <span class="crit-badge" style="flex-shrink:0;margin-top:2px">${a.criterion}</span>
+                  <div style="flex:1;min-width:0">
+                    <div style="font-size:.85rem;font-weight:500;color:var(--txt-1);margin-bottom:3px">${a.focus}</div>
+                    <span class="tag" style="font-size:.68rem">${a.tool}</span>
+                    ${a.alignment ? `<div style="font-size:.75rem;color:var(--txt-3);margin-top:6px;line-height:1.55;font-style:italic">${a.alignment}</div>` : ''}
+                  </div>
                 </div>`).join('')}
-            </div>` : ''}
+            </div>
           </div>
           <div>
             <span class="label">Success Criteria</span>
