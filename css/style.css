@@ -148,7 +148,7 @@ p  { color:var(--txt-2); font-weight:300; }
 /* ── HERO ──────────────────────────────────────────────── */
 .hero { background:var(--white); border-bottom:1px solid var(--border); padding:88px 0 72px; }
 .hero-eyebrow { display:flex; align-items:center; gap:10px; font-size:.7rem; font-weight:500; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin-bottom:24px; }
-.hero-eyebrow::before { content:''; width:28px; height:1px; background:var(--accent); }
+.hero-eyebrow::before { display:none; }
 .hero h1 { margin-bottom:24px; }
 .hero h1 .accent { color:var(--accent); }
 .hero-sub { font-size:1.05rem; line-height:1.75; max-width:540px; color:var(--txt-2); font-weight:300; margin-bottom:36px; }
@@ -302,3 +302,76 @@ footer a { color:var(--accent); }
   .lesson-previews { grid-template-columns:repeat(3,1fr); }
   .grade-cards { grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); }
 }
+
+/* ── BACK TO TOP ───────────────────────────────────────── */
+.back-top {
+  position: fixed;
+  bottom: 28px;
+  right: 24px;
+  z-index: 300;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  box-shadow: 0 4px 16px rgba(43,78,219,.3);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity .25s, transform .25s;
+  pointer-events: none;
+}
+.back-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.back-top:hover { opacity: .85; }
+
+/* ── PAGE TOC (desktop only) ───────────────────────────── */
+.page-toc {
+  position: fixed;
+  left: max(16px, calc(50% - 560px));
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 150;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 140px;
+}
+.page-toc a {
+  font-size: .68rem;
+  color: var(--txt-3);
+  font-weight: 500;
+  transition: color .2s;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.page-toc a::before {
+  content: '';
+  width: 16px;
+  height: 1.5px;
+  background: var(--border);
+  flex-shrink: 0;
+  transition: background .2s, width .2s;
+}
+.page-toc a:hover, .page-toc a.toc-active {
+  color: var(--accent);
+}
+.page-toc a.toc-active::before {
+  background: var(--accent);
+  width: 20px;
+}
+@media (max-width: 1280px) { .page-toc { display: none; } }

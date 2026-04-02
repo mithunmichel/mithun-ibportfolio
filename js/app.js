@@ -5,8 +5,52 @@ async function boot() {
   const res = await fetch('./data/content.json');
   D = await res.json();
   buildNav();
+  initBackTop();
   window.addEventListener('hashchange', route);
   route();
+}
+
+/* ── Back to top ──────────────────────────────────────── */
+function initBackTop() {
+  const btn = document.getElementById('backTop');
+  if (!btn) return;
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  });
+  btn.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+}
+
+/* ── Page TOC (desktop only) ──────────────────────────── */
+function buildTOC(sections) {
+  // Remove existing TOC
+  document.querySelector('.page-toc')?.remove();
+  if (window.innerWidth < 1280) return;
+
+  const toc = document.createElement('nav');
+  toc.className = 'page-toc';
+  sections.forEach(({id, label}) => {
+    const a = document.createElement('a');
+    a.textContent = label;
+    a.title = label;
+    a.onclick = () => {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({behavior:'smooth', block:'start'});
+    };
+    toc.appendChild(a);
+  });
+  document.body.appendChild(toc);
+
+  // Highlight active section on scroll
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      const link = toc.querySelector(`a[title="${sections.find(s=>s.id===e.target.id)?.label}"]`);
+      if (link) link.classList.toggle('toc-active', e.isIntersecting);
+    });
+  }, {threshold: 0.3});
+  sections.forEach(({id}) => {
+    const el = document.getElementById(id);
+    if (el) obs.observe(el);
+  });
 }
 
 /* ── Router ───────────────────────────────────────────── */
@@ -17,6 +61,7 @@ function route() {
   window.scrollTo(0,0);
   closeMobileNav();
   setActive(hash);
+  document.querySelector('.page-toc')?.remove();
   const map = { home, about, philosophy, units, demos, contact };
   if      (hash.startsWith('grade--'))  gradeDetail(hash.replace('grade--',''));
   else if (hash.startsWith('unit--'))   unitDetail(hash.replace('unit--',''));
@@ -113,13 +158,12 @@ function home() {
     </section>
 
     <section class="sec sec-alt">
-      <div class="wrap-wide">
-        <div class="sec-hdr wrap">
+      <div class="wrap">
+        <div class="sec-hdr">
           <span class="label">My Approach to Teaching Design</span>
           <h2>Four principles that will guide my teaching approach</h2>
         </div>
-        <div class="wrap-wide">
-          <div class="pillars-grid">
+        <div class="pillars-grid">
             ${[
               {icon:'search',  t:'Design Thinking',       d:'Systematic problem-solving methodologies tailored for student cognitive development.'},
               {icon:'lightbulb',t:'Inquiry-Based Learning',d:'Fostering curiosity through open-ended investigations and critical questioning.'},
@@ -131,7 +175,6 @@ function home() {
                 <h3>${p.t}</h3>
                 <p>${p.d}</p>
               </div>`).join('')}
-          </div>
         </div>
       </div>
     </section>
@@ -160,14 +203,13 @@ function home() {
     </section>
 
     <section class="sec sec-alt">
-      <div class="wrap-wide">
-        <div class="sec-hdr wrap">
+      <div class="wrap">
+        <div class="sec-hdr">
           <span class="label">Lesson Design</span>
           <h2>Featured Demo Lessons</h2>
           <p>Prepared lesson plans applying the MYP Design Cycle — structured and ready for the classroom.</p>
         </div>
-        <div class="wrap-wide">
-          <div class="lesson-previews">
+        <div class="lesson-previews">
             ${h.lessonHighlights.map(l=>`
               <div class="card card-click lesson-preview" onclick="go('lesson--${D.demos.lessons.find(x=>x.title===l.title)?.id||'demos'}')">
                 <span class="duration-tag">${l.duration}</span>
@@ -175,7 +217,6 @@ function home() {
                 <p>${l.desc}</p>
                 <span class="arrow-link">View Lesson</span>
               </div>`).join('')}
-          </div>
         </div>
       </div>
     </section>
@@ -334,7 +375,7 @@ function units() {
     </section>
 
     <section class="sec">
-      <div class="wrap-wide">
+      <div class="wrap">
         <div class="grade-cards">
           ${u.levels.map(lvl => {
             const info = gradeInfo[lvl.grade] || {};
@@ -403,6 +444,7 @@ function gradeDetail(gradeSlug) {
   const grade = gradeSlug.replace('-',' ');
   const lvl = D.units.levels.find(l=>l.grade===grade);
   if (!lvl) { go('units'); return; }
+  const ageMap = {'MYP 1':'Ages 11–12','MYP 2':'Ages 12–13','MYP 3':'Ages 13–14','MYP 4':'Ages 14–15','MYP 5':'Ages 15–16'};
   set(`
     <section class="unit-detail-hero">
       <div class="wrap">
@@ -411,14 +453,17 @@ function gradeDetail(gradeSlug) {
           <span class="breadcrumb-sep">›</span>
           <span>${lvl.grade}</span>
         </div>
-        <span class="tag tag-grade" style="margin-bottom:14px;display:inline-block">${lvl.grade}</span>
+        <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;align-items:center">
+          <span class="tag tag-grade">${lvl.grade}</span>
+          <span class="tag">${ageMap[lvl.grade]||''}</span>
+        </div>
         <h1 style="margin-bottom:8px">${lvl.theme}</h1>
         <p style="max-width:520px">${lvl.units.length} unit${lvl.units.length!==1?'s':''} · Click a unit to see full details</p>
       </div>
     </section>
 
     <section class="sec">
-      <div class="wrap-wide">
+      <div class="wrap">
         <div class="units-grid">
           ${lvl.units.map(unit=>`
             <div class="card ${unit.status==='full'?'card-click':'card-static'} unit-card"
@@ -654,6 +699,22 @@ function unitDetail(id) {
       </div>
     </section>` : ''}
   `);
+
+  // Add section IDs for TOC
+  setTimeout(() => {
+    const sections = document.querySelectorAll('#main section');
+    const tocItems = [];
+    sections.forEach((sec, i) => {
+      const h2 = sec.querySelector('h2');
+      const label = sec.querySelector('.label');
+      if (label) {
+        const id = 'toc-sec-' + i;
+        sec.id = id;
+        tocItems.push({id, label: label.textContent.trim()});
+      }
+    });
+    buildTOC(tocItems);
+  }, 50);
 }
 
 /* ── DEMOS — with filter chips ────────────────────────── */
@@ -690,37 +751,35 @@ function demos(filterGrade = 'All') {
     </section>
 
     <section class="sec sec-alt">
-      <div class="wrap-wide">
-        <div class="sec-hdr wrap">
+      <div class="wrap">
+        <div class="sec-hdr">
           <span class="label">Demo Lessons</span>
           <h2>All prepared lessons</h2>
         </div>
-        <div class="wrap-wide">
-          <div class="chip-row" id="demoFilters">
-            ${grades.map(g=>`
-              <button class="chip ${g===filterGrade?'active':''}" onclick="demos('${g}')">${g}</button>
-            `).join('')}
-          </div>
-          <div class="lessons-grid">
-            ${filtered.map(l=>`
-              <div class="card card-click" style="padding:0;overflow:hidden" onclick="go('lesson--${l.id}')">
-                <div class="lesson-card-head">
-                  <span class="tag tag-phase phase-${l.phase.toLowerCase()}">${l.phase}</span>
-                  <h3 style="margin-top:10px">${l.title}</h3>
-                  <p>${l.objective}</p>
-                  <div class="lesson-card-meta">
-                    <span class="tag">${l.grade}</span>
-                    <span class="tag tag-accent">${l.duration}</span>
-                    ${l.criteria.map(c=>`<span class="tag">Criterion ${c}</span>`).join('')}
-                  </div>
-                </div>
-                <div class="lesson-card-body">
-                  <span class="arrow-link">View Full Lesson</span>
-                </div>
-              </div>`).join('')}
-          </div>
-          ${filtered.length===0?`<p style="color:var(--txt-3);text-align:center;padding:40px 0">No lessons yet for ${filterGrade}. Check back soon.</p>`:''}
+        <div class="chip-row" id="demoFilters">
+          ${grades.map(g=>`
+            <button class="chip ${g===filterGrade?'active':''}" onclick="demos('${g}')">${g}</button>
+          `).join('')}
         </div>
+        <div class="lessons-grid">
+          ${filtered.map(l=>`
+            <div class="card card-click" style="padding:0;overflow:hidden" onclick="go('lesson--${l.id}')">
+              <div class="lesson-card-head">
+                <span class="tag tag-phase phase-${l.phase.toLowerCase()}">${l.phase}</span>
+                <h3 style="margin-top:10px">${l.title}</h3>
+                <p>${l.objective}</p>
+                <div class="lesson-card-meta">
+                  <span class="tag">${l.grade}</span>
+                  <span class="tag tag-accent">${l.duration}</span>
+                  ${l.criteria.map(c=>`<span class="tag">Criterion ${c}</span>`).join('')}
+                </div>
+              </div>
+              <div class="lesson-card-body">
+                <span class="arrow-link">View Full Lesson</span>
+              </div>
+            </div>`).join('')}
+        </div>
+        ${filtered.length===0?`<p style="color:var(--txt-3);text-align:center;padding:40px 0">No lessons yet for ${filterGrade}. Check back soon.</p>`:''}
       </div>
     </section>
 
