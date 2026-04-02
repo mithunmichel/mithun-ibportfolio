@@ -136,6 +136,53 @@
       { "label": "Ideating", "sub": "Prototype" },
       { "label": "Refining", "sub": "Create · Evaluate" }
     ],
+    "aiProgression": {
+      "intro": "AI is not a technology topic in this curriculum — it is a design context. Across MYP 1–5, students learn to question, guide, and critically evaluate intelligent systems. The progression moves from awareness to independence, matching each age group's cognitive and ethical readiness.",
+      "tagline": "Not 'how to use AI' — but 'how to think about AI'",
+      "levels": [
+        {
+          "grade": "MYP 1",
+          "focus": "Awareness + Curiosity",
+          "bigIdea": "Machines can learn patterns",
+          "unitTitle": "What is Smart Technology?",
+          "summary": "Students identify AI in daily life, compare human vs machine decisions, and develop curiosity about how technology learns.",
+          "status": "outline"
+        },
+        {
+          "grade": "MYP 2",
+          "focus": "Interaction + Guidance",
+          "bigIdea": "AI depends on how we guide it",
+          "unitTitle": "Designing with AI",
+          "summary": "Students give instructions to AI tools, observe how outputs change with different inputs, and learn that AI quality depends on the quality of human guidance.",
+          "status": "outline"
+        },
+        {
+          "grade": "MYP 3",
+          "focus": "Systems + Impact",
+          "bigIdea": "AI is part of larger systems, not standalone",
+          "unitTitle": "AI in Systems",
+          "summary": "Students map how AI operates inside real systems — healthcare, transport, recommendations — and trace how data becomes decisions, and where those decisions fail.",
+          "status": "outline"
+        },
+        {
+          "grade": "MYP 4",
+          "focus": "Ethics + Constraints",
+          "bigIdea": "AI decisions are not neutral",
+          "unitTitle": "AI, Ethics and Constraints",
+          "summary": "Students analyse bias, privacy, and the limits of AI decision-making. They conduct ethical debates and redesign a system where AI has caused demonstrable harm.",
+          "status": "outline"
+        },
+        {
+          "grade": "MYP 5",
+          "focus": "Critical Thinking + Independence",
+          "bigIdea": "AI is a tool — not a replacement for thinking",
+          "unitTitle": "Designing With and Against AI",
+          "summary": "Students independently choose to either use AI responsibly or design a solution that addresses a problem caused by AI — completing the full design cycle with ethical criteria embedded throughout.",
+          "status": "full",
+          "unitId": "designing-with-against-ai"
+        }
+      ]
+    },
     "levels": [
       {
         "grade": "MYP 1",
@@ -158,6 +205,26 @@
             "focus": "Self-Management",
             "duration": "8 Weeks",
             "status": "outline"
+          },
+          {
+            "id": "what-is-smart-technology",
+            "title": "What is Smart Technology?",
+            "desc": "Students explore AI in everyday life — identifying smart technology around them, comparing human vs machine decisions, and developing curiosity about how machines learn patterns.",
+            "criteria": ["A", "B"],
+            "focus": "Awareness",
+            "duration": "3 Weeks",
+            "status": "outline",
+            "isAiUnit": true,
+            "bigIdea": "Machines can learn patterns",
+            "keyConcept": "Form",
+            "relatedConcepts": ["Function", "Perspective"],
+            "globalContext": "Scientific and Technical Innovation",
+            "keyActivities": [
+              "Identify AI in daily life — maps, recommendations, autocomplete",
+              "Compare human vs machine decisions on the same task",
+              "Simple classification game — what can machines learn, what can they not?",
+              "Reflect: when does the machine help, and when does the human do better?"
+            ]
           }
         ]
       },
@@ -319,10 +386,54 @@
               }
             ],
             "assessment": [
-              { "criterion": "A", "focus": "Research and problem understanding", "tool": "Formative Portfolio" },
-              { "criterion": "B", "focus": "Idea generation and justification", "tool": "Design Specification" },
-              { "criterion": "C", "focus": "Development of solution", "tool": "Process Journal" },
-              { "criterion": "D", "focus": "Reflection and evaluation", "tool": "Reflection Essay" }
+              {
+                "criterion": "A",
+                "focus": "Research and problem understanding",
+                "tool": "Formative Portfolio",
+                "linkedLessons": ["Lesson 1 — Introduction to Accessibility", "Lesson 2 — Design Audit", "Lesson 3 — Persona Creation", "Lesson 4 — Problem Statement Writing"],
+                "rubric": [
+                  { "band": "7–8", "label": "Advanced", "desc": "Insightful identification of a real accessibility problem with strong evidence. Well-developed user persona grounded in research. Clear, specific problem statement with justified design direction." },
+                  { "band": "5–6", "label": "Proficient", "desc": "Clear identification of an accessibility problem with supporting observation. Persona developed with relevant user needs. Problem statement defined with some justification." },
+                  { "band": "3–4", "label": "Developing", "desc": "Accessibility problem identified but lacks evidence or specificity. Basic persona with limited user understanding. Problem statement present but vague." },
+                  { "band": "0–2", "label": "Limited", "desc": "Problem poorly defined or not grounded in observation. Persona missing or generic. Problem statement unclear or absent." }
+                ]
+              },
+              {
+                "criterion": "B",
+                "focus": "Idea generation and justification",
+                "tool": "Design Specification",
+                "linkedLessons": ["Lesson 5 — Crazy 8 Ideation", "Lesson 6 — Idea Evaluation Matrix", "Lesson 7 — Design Specification Writing"],
+                "rubric": [
+                  { "band": "7–8", "label": "Advanced", "desc": "Wide range of design ideas generated independently. Chosen idea well-developed and clearly justified against specification criteria and user needs. Trade-offs acknowledged." },
+                  { "band": "5–6", "label": "Proficient", "desc": "Multiple ideas generated. Chosen idea developed with reasonable justification referencing the user and problem." },
+                  { "band": "3–4", "label": "Developing", "desc": "Some ideas generated. Limited development. Justification present but not connected to user or criteria." },
+                  { "band": "0–2", "label": "Limited", "desc": "Few ideas. Little or no development or justification shown." }
+                ]
+              },
+              {
+                "criterion": "C",
+                "focus": "Development of solution",
+                "tool": "Process Journal",
+                "linkedLessons": ["Lesson 8 — Prototype Building", "Lesson 9 — Peer Testing", "Lesson 10 — Iteration and Improvement"],
+                "rubric": [
+                  { "band": "7–8", "label": "Advanced", "desc": "Well-constructed prototype that clearly communicates function for the target user. Evidence of iteration based on peer testing. Making decisions documented and justified." },
+                  { "band": "5–6", "label": "Proficient", "desc": "Functional prototype that addresses the identified problem. Some evidence of iteration. Making process partially documented." },
+                  { "band": "3–4", "label": "Developing", "desc": "Basic prototype with limited functionality. Minimal iteration evident. Making process poorly documented." },
+                  { "band": "0–2", "label": "Limited", "desc": "Incomplete or unclear prototype. No evidence of iteration or making decisions." }
+                ]
+              },
+              {
+                "criterion": "D",
+                "focus": "Reflection and evaluation",
+                "tool": "Reflection Essay",
+                "linkedLessons": ["Lesson 11 — Evaluation Writing", "Lesson 12 — Final Presentation"],
+                "rubric": [
+                  { "band": "7–8", "label": "Advanced", "desc": "Insightful evaluation comparing final design against self-defined criteria. Honest assessment of strengths and limitations. Specific, meaningful improvements suggested. Reflection shows genuine design learning." },
+                  { "band": "5–6", "label": "Proficient", "desc": "Clear evaluation identifying strengths and weaknesses against criteria. Some reflection on limitations. Improvements suggested." },
+                  { "band": "3–4", "label": "Developing", "desc": "Basic evaluation with limited insight. Some reflection but surface-level. Few improvements suggested." },
+                  { "band": "0–2", "label": "Limited", "desc": "Minimal evaluation. Little reflection on effectiveness or learning." }
+                ]
+              }
             ],
             "successCriteria": [
               "Identify a real-world accessibility problem with clarity and evidence",
@@ -348,6 +459,26 @@
             "focus": "Social",
             "duration": "6 Weeks",
             "status": "outline"
+          },
+          {
+            "id": "designing-with-ai-myp2",
+            "title": "Designing with AI",
+            "desc": "Students interact with AI tools, observe how outputs change with different inputs, and learn that AI quality depends entirely on the quality of human guidance and instruction.",
+            "criteria": ["A", "B"],
+            "focus": "Interaction",
+            "duration": "3 Weeks",
+            "status": "outline",
+            "isAiUnit": true,
+            "bigIdea": "AI depends on how we guide it",
+            "keyConcept": "Development",
+            "relatedConcepts": ["Function", "Innovation"],
+            "globalContext": "Scientific and Technical Innovation",
+            "keyActivities": [
+              "Give the same instruction to an AI tool in different ways — observe how outputs change",
+              "Improve a bad AI prompt step by step — document what changes each time",
+              "Design a better input for a real task (homework help, image search, directions)",
+              "Reflect: who is responsible for the output — the AI or the person guiding it?"
+            ]
           }
         ]
       },
@@ -553,10 +684,10 @@
               }
             ],
             "assessment": [
-              { "criterion": "A", "focus": "Community problem research and stakeholder analysis", "tool": "Research Portfolio" },
-              { "criterion": "B", "focus": "Idea generation, evaluation, and justified selection", "tool": "Design Journal" },
-              { "criterion": "C", "focus": "Prototype development appropriate to the solution type", "tool": "Process Documentation" },
-              { "criterion": "D", "focus": "Impact evaluation against social and functional criteria", "tool": "Evaluation Report" }
+              { "criterion": "A", "focus": "Community problem research and stakeholder analysis", "tool": "Research Portfolio", "alignment": "Students inquire and analyse through field observation, stakeholder mapping, research planning, and data collection — Lessons 1–8." },
+              { "criterion": "B", "focus": "Idea generation, evaluation, and justified selection", "tool": "Design Journal", "alignment": "Students develop ideas through brainstorming, concept sketching, evaluation matrix, and written justification — Lessons 9–12." },
+              { "criterion": "C", "focus": "Prototype development appropriate to the solution type", "tool": "Process Documentation", "alignment": "Students create solutions through prototype building and user testing — Lessons 13–15." },
+              { "criterion": "D", "focus": "Impact evaluation against social and functional criteria", "tool": "Evaluation Report", "alignment": "Students evaluate through structured reflection and final presentation — Lessons 15–16." }
             ],
             "successCriteria": [
               "Identify a real community problem supported by research evidence",
@@ -584,6 +715,26 @@
             "focus": "Critical Thinking",
             "duration": "9 Weeks",
             "status": "outline"
+          },
+          {
+            "id": "ai-in-systems-myp3",
+            "title": "AI in Systems",
+            "desc": "Students map how AI operates inside real-world systems — healthcare, transport, recommendations — and trace how data becomes decisions, where those decisions fail, and who is affected.",
+            "criteria": ["A", "B"],
+            "focus": "Systems Thinking",
+            "duration": "3 Weeks",
+            "status": "outline",
+            "isAiUnit": true,
+            "bigIdea": "AI is part of larger systems, not standalone",
+            "keyConcept": "Systems",
+            "relatedConcepts": ["Function", "Sustainability"],
+            "globalContext": "Globalization and Sustainability",
+            "keyActivities": [
+              "Map a real AI system (healthcare diagnosis, ride-sharing, news feed) — inputs, processing, outputs, feedback loops",
+              "Trace how data becomes decisions in that system — where does bias enter?",
+              "Analyse a real case of AI system failure and identify the design decision that caused it",
+              "Propose one change to the system that would make it fairer or more transparent"
+            ]
           }
         ]
       },
@@ -798,10 +949,10 @@
               }
             ],
             "assessment": [
-              { "criterion": "A", "focus": "Context research and constraint analysis", "tool": "Constraint Matrix + Context Map" },
-              { "criterion": "B", "focus": "Constrained ideation, trade-off analysis, and justified selection", "tool": "Design Journal" },
-              { "criterion": "C", "focus": "Efficient prototype built within stated constraints", "tool": "Prototype + Making Record" },
-              { "criterion": "D", "focus": "Evaluation against constraints and success criteria", "tool": "Evaluation Report" }
+              { "criterion": "A", "focus": "Context research and constraint analysis", "tool": "Constraint Matrix + Context Map", "alignment": "Students inquire and analyse through constraint classification, case studies, context mapping, and problem definition — Lessons 1–8." },
+              { "criterion": "B", "focus": "Constrained ideation, trade-off analysis, and justified selection", "tool": "Design Journal", "alignment": "Students develop ideas through constrained brainstorming, concept sketching, trade-off analysis, and written justification — Lessons 9–12." },
+              { "criterion": "C", "focus": "Efficient prototype built within stated constraints", "tool": "Prototype + Making Record", "alignment": "Students create solutions through efficient prototyping and constrained testing — Lessons 13–15." },
+              { "criterion": "D", "focus": "Evaluation against constraints and success criteria", "tool": "Evaluation Report", "alignment": "Students evaluate through constraint-specific reflection and final presentation — Lessons 16–17." }
             ],
             "successCriteria": [
               "Identify and categorise all constraints in the design challenge",
@@ -829,6 +980,309 @@
             "focus": "Collaboration",
             "duration": "8 Weeks",
             "status": "outline"
+          },
+          {
+            "id": "ai-ethics-constraints-myp4",
+            "title": "AI, Ethics and Responsible Design",
+            "desc": "Students investigate AI as a powerful but imperfect system — exploring bias, reliability, and ethical implications — and design solutions that improve AI use, reduce misuse, or introduce safeguards.",
+            "criteria": ["A", "B", "C", "D"],
+            "focus": "Ethical Reasoning",
+            "duration": "4–5 Weeks · 16–19 Lessons",
+            "status": "full",
+            "isAiUnit": true,
+            "bigIdea": "AI decisions are not neutral",
+            "keyConcept": "Systems",
+            "relatedConcepts": ["Ethics", "Function", "Innovation"],
+            "globalContext": "Scientific and Technical Innovation",
+            "statementOfInquiry": "The design and use of intelligent systems raise ethical questions about responsibility, fairness, and decision-making.",
+            "unitOverview": "This unit explores AI as a powerful but imperfect system that influences decisions, behaviours, and outcomes at scale. Students investigate bias in AI outputs, the reliability of AI-generated content, and the ethical implications of AI decision-making. They move from observation to judgment — not just noticing that AI can fail, but questioning why it fails, who is harmed, and what responsible design looks like. The summative task positions students as designers who can identify, investigate, and address real AI-related problems.",
+            "summativeTask": "Students design a solution that addresses an ethical or practical issue in AI usage — such as bias in outputs, misleading information, over-reliance on AI, or lack of transparency. They must investigate the issue, define a clear problem, develop and justify solutions, create a prototype, and evaluate its impact including ethical implications.",
+            "inquiryQuestions": {
+              "factual": "What are the limitations of AI systems?",
+              "conceptual": "How do AI systems influence human decisions?",
+              "debatable": "Should AI systems be trusted to make important decisions?"
+            },
+            "weeks": [
+              {
+                "number": 1,
+                "title": "Understanding AI Limitations",
+                "desc": "Students move from passive AI users to active questioners. They map where AI appears in their daily life, conduct input-output experiments, analyse strengths and failures, and study real-world cases of AI bias and error.",
+                "focus": "Moving from awareness → questioning → evidence-based analysis",
+                "lessons": [
+                  {
+                    "number": 1,
+                    "title": "AI in Everyday Life",
+                    "goal": "Move students from AI users to AI questioners",
+                    "what": "Students map all the places they encounter AI in a single day — then begin to question what they had previously accepted without thought.",
+                    "activity": "AI Usage Mapping",
+                    "activityDetail": "Students list every AI system they interact with in a typical day (search, autocomplete, recommendations, filters, navigation). For each: what decision does the AI make? Who benefits? Could it be wrong? Class shares and looks for patterns.",
+                    "outcome": "Students realise AI is already making decisions around them — and that they have rarely questioned those decisions."
+                  },
+                  {
+                    "number": 2,
+                    "title": "How AI Generates Outputs",
+                    "goal": "Understand AI as an input-output system, not an oracle",
+                    "what": "Students experiment with changing prompts and observe how AI outputs change — building a mental model of AI as a pattern-matching system that is highly sensitive to input.",
+                    "activity": "Input–Output Experiment",
+                    "activityDetail": "Students submit the same question or request to an AI tool in 4 different ways — changing phrasing, adding context, changing tone. Document how the output changes each time. Conclusion: what does this tell us about how AI 'thinks'?",
+                    "outcome": "Students understand that AI outputs are not facts — they are responses shaped by inputs, training data, and probability."
+                  },
+                  {
+                    "number": 3,
+                    "title": "Strengths vs Weaknesses of AI",
+                    "goal": "Build an accurate, evidence-based picture of AI capability",
+                    "what": "Students conduct a structured analysis of what AI genuinely does well and where it consistently fails — developing a capability map that will inform their design choices.",
+                    "activity": "AI Capability Chart",
+                    "activityDetail": "Students test an AI tool on 5 task types: pattern recognition, factual accuracy, creative generation, ethical judgment, and empathy. Rate each (1–5) with evidence. Build a capability chart. Identify: which failures matter most for people?",
+                    "outcome": "An honest, evidence-based capability map — students know what they are working with, not what they wish AI could do."
+                  },
+                  {
+                    "number": 4,
+                    "title": "Case Study Analysis",
+                    "goal": "Learn from documented real-world AI failures",
+                    "what": "Students analyse 2 real cases where AI caused measurable harm — biased hiring algorithms, incorrect medical recommendations, discriminatory lending decisions, misinformation amplification.",
+                    "activity": "Real-World Case Study Analysis",
+                    "activityDetail": "For each case: what was the AI designed to do? What went wrong? Who was harmed and how seriously? Who was responsible? What design decision caused the problem? What should have been done differently?",
+                    "outcome": "Students see AI failures not as technical glitches but as design decisions — made by people who are accountable."
+                  }
+                ]
+              },
+              {
+                "number": 2,
+                "title": "Ethics & Critical Thinking",
+                "desc": "Students investigate bias directly through their own testing, evaluate AI reliability against verifiable facts, argue ethical positions in a structured debate, and identify a real AI-related problem they will design around.",
+                "focus": "Moving from observation → ethical questioning → defined design problem",
+                "lessons": [
+                  {
+                    "number": 5,
+                    "title": "Bias in AI",
+                    "goal": "Observe AI bias directly — not just read about it",
+                    "what": "Students test AI outputs for bias by changing demographic variables in their prompts — names, locations, professions — and systematically documenting what changes.",
+                    "activity": "Output Comparison",
+                    "activityDetail": "Students test the same prompt with 3 different demographic variables changed. Document: what is different in the output? What patterns emerge across the class? Write one sentence: what does this reveal about the data this AI was trained on?",
+                    "outcome": "Students have personal, direct evidence of AI bias — making it concrete rather than abstract."
+                  },
+                  {
+                    "number": 6,
+                    "title": "Trust and Reliability",
+                    "goal": "Evaluate AI output accuracy against verifiable facts",
+                    "what": "Students receive 10 AI-generated statements on a familiar topic and verify each against a reliable source — experiencing firsthand how plausible-sounding AI output can be factually wrong.",
+                    "activity": "Fact vs AI Output",
+                    "activityDetail": "Students verify 10 AI-generated statements — mark each as accurate, inaccurate, or unverifiable. Calculate: what percentage was wrong? Discuss: in what contexts would these errors be most harmful? What does this mean for how we should use AI?",
+                    "outcome": "Students have a personal, quantified sense of AI reliability — not a vague impression."
+                  },
+                  {
+                    "number": 7,
+                    "title": "Ethical Debate",
+                    "goal": "Construct and defend an ethical position on AI decision-making",
+                    "what": "Students engage in a structured debate on the question: 'Should AI be allowed in important decision-making?' Students are assigned positions and must argue from evidence.",
+                    "activity": "Structured Debate",
+                    "activityDetail": "Assign positions (for/against AI in decision-making). 10 minutes preparation using evidence from the week. Debate format: opening (2 min), counter-argument (2 min), rebuttal (1 min). Debrief: which evidence was most compelling and why?",
+                    "outcome": "Students practise structured ethical argumentation — connecting evidence to position, not just expressing opinion."
+                  },
+                  {
+                    "number": 8,
+                    "title": "Identifying Problems",
+                    "goal": "Identify a specific, real AI-related problem worth designing a solution for",
+                    "what": "Students select the AI-related problem they will address in the summative task — from bias in outputs, misleading information, over-reliance, or lack of transparency.",
+                    "activity": "Problem Framing",
+                    "activityDetail": "Students write a problem focus: which AI issue, where it occurs, who is affected, and why it matters. Peer review: is this specific enough to design a solution for? Is it actually caused by AI — not just related to technology?",
+                    "outcome": "A clearly framed, AI-specific design problem — ready for research and definition."
+                  }
+                ]
+              },
+              {
+                "number": 3,
+                "title": "Defining & Designing",
+                "desc": "Students research their specific AI problem, map all affected stakeholders, write a precise problem statement, and define success criteria that include ethical requirements.",
+                "focus": "Moving from problem → researched evidence → ethical specification",
+                "lessons": [
+                  {
+                    "number": 9,
+                    "title": "Research",
+                    "goal": "Gather specific evidence about the AI problem being addressed",
+                    "what": "Students conduct primary and secondary research focused on their chosen AI issue — not generic AI information, but specific evidence about the problem they are designing around.",
+                    "activity": "User + System Research",
+                    "activityDetail": "Students conduct at least 1 primary research activity (peer survey on AI trust or AI use patterns) and review 2 secondary sources (journalism, academic summaries, ethics reports). Summarise: 3 key facts, 2 surprising findings, 1 gap in current solutions.",
+                    "outcome": "Specific, evidence-based knowledge of the AI problem — not general AI literacy."
+                  },
+                  {
+                    "number": 10,
+                    "title": "Stakeholder Mapping",
+                    "goal": "Identify everyone affected — including those who benefit from the problem remaining unsolved",
+                    "what": "Students map stakeholders with attention to who is harmed and who benefits from the current AI system — understanding that AI problems often persist because someone profits from them.",
+                    "activity": "Stakeholder Identification",
+                    "activityDetail": "Students map: primary users (most affected), secondary users, decision makers, and — critically — who benefits from the status quo. Draw relationships. Identify: who has the power to change this, and who lacks it?",
+                    "outcome": "A stakeholder map that reveals the structural reasons the problem exists — not just who is inconvenienced."
+                  },
+                  {
+                    "number": 11,
+                    "title": "Problem Definition",
+                    "goal": "Write a precise problem statement naming the AI system, affected people, and ethical dimension",
+                    "what": "Students synthesise their research into a refined problem statement that names the specific AI system, the people affected, and the ethical issue at the core.",
+                    "activity": "Refined Problem Statement",
+                    "activityDetail": "Structure: '[AI system] causes [harm] for [affected group] because [root cause], which raises the ethical question of [responsibility/fairness/transparency].' Peer review: is the AI system named specifically? Is the ethical dimension clear?",
+                    "outcome": "A problem statement that is technically precise and ethically grounded — the anchor for the rest of the unit."
+                  },
+                  {
+                    "number": 12,
+                    "title": "Design Specification",
+                    "goal": "Define measurable success criteria that include ethical requirements",
+                    "what": "Students write a specification where ethical criteria sit alongside functional ones — making ethical performance as measurable as usability.",
+                    "activity": "Criteria Writing",
+                    "activityDetail": "Write 5–7 success criteria. At least 2 must address ethical requirements (e.g. 'reduces bias in outputs by providing diverse reference examples', 'increases user awareness of AI limitations before relying on output'). Peer review: are ethical criteria measurable?",
+                    "outcome": "A specification that makes ethics testable — not aspirational."
+                  }
+                ]
+              },
+              {
+                "number": 4,
+                "title": "Ideation & Prototyping",
+                "desc": "Students generate solutions that address both the functional and ethical dimensions, develop the strongest concept, evaluate rigorously, and build a prototype that makes the ethical intent visible.",
+                "focus": "Moving from ideas → developed concept → evaluated decision → functional prototype",
+                "lessons": [
+                  {
+                    "number": 13,
+                    "title": "Idea Generation",
+                    "goal": "Generate multiple solutions that address both function and ethics",
+                    "what": "Students brainstorm solutions — each one must address both the functional problem and the ethical specification criteria. Solutions that fix the function while ignoring ethics are flagged.",
+                    "activity": "Multiple Solutions",
+                    "activityDetail": "Generate at least 6 ideas. For each: sketch, describe function, annotate which ethical criteria it addresses. Flag any ethical criteria not addressed — is that acceptable for this idea?",
+                    "outcome": "A range of ideas that are both functional and ethically considered."
+                  },
+                  {
+                    "number": 14,
+                    "title": "Concept Development",
+                    "goal": "Develop the most promising idea to technical and ethical detail",
+                    "what": "Students select one idea and develop it fully — detailing how it functions, who it serves, and how it handles the ethical dimension of the AI problem.",
+                    "activity": "Detailed Design",
+                    "activityDetail": "Produce annotated sketches or a system diagram: how it functions, what AI components are involved, who interacts with it, and how each ethical criterion is addressed. Add a section: what could go wrong ethically, and how is that risk managed?",
+                    "outcome": "A concept with both functional precision and ethical awareness built in — not added later."
+                  },
+                  {
+                    "number": 15,
+                    "title": "Evaluation Matrix",
+                    "goal": "Evaluate top ideas with ethical criteria carrying equal weight",
+                    "what": "Students apply the full specification as an evaluation tool — with ethical criteria weighted equally to functional ones.",
+                    "activity": "Compare Ideas",
+                    "activityDetail": "Rate top 3 ideas against all criteria (1–3 scale). Ensure ethical criteria are weighted appropriately. Check: does the highest-scoring idea genuinely address the ethical problem, or does strong function mask weak ethics?",
+                    "outcome": "A defensible, criteria-based selection that does not trade ethics for convenience."
+                  },
+                  {
+                    "number": 16,
+                    "title": "Prototype Creation",
+                    "goal": "Build a prototype that makes the ethical intent visible and testable",
+                    "what": "Students build their prototype — which may be an interface mockup, workflow diagram, service blueprint, or physical object. The ethical design decisions must be visible in the prototype itself.",
+                    "activity": "Build Solution",
+                    "activityDetail": "Build using the most appropriate format for the solution type. Annotate: where in the design is the ethical problem being addressed? Label features that specifically reduce bias, increase transparency, or protect the user. Document all making decisions.",
+                    "outcome": "A prototype where the ethical intent is visible — not hidden in a justification document."
+                  }
+                ]
+              },
+              {
+                "number": 5,
+                "title": "Testing & Evaluation",
+                "desc": "Students test for both functional and ethical performance, evaluate honestly against all criteria, and present the full design journey with emphasis on ethical reasoning.",
+                "focus": "Moving from prototype → tested solution → honest evaluation → defended presentation",
+                "lessons": [
+                  {
+                    "number": 17,
+                    "title": "Testing",
+                    "goal": "Test both function and ethical performance",
+                    "what": "Students test their prototype with peers — evaluating not just whether it works but whether it is fair, transparent, and trustworthy for the user.",
+                    "activity": "User Testing / Simulation",
+                    "activityDetail": "Set up testing with two dimensions: functional (can the user complete the task?) and ethical (does the user feel the system is fair and transparent?). Post-test question: 'How much do you trust this system?' (1–5). Document all findings — positive and negative equally.",
+                    "outcome": "Evidence of both functional and ethical performance — the foundation for a rigorous evaluation."
+                  },
+                  {
+                    "number": 18,
+                    "title": "Evaluation + Reflection",
+                    "goal": "Evaluate against all criteria with equal rigour for ethics and function",
+                    "what": "Students evaluate their final design against every criterion — with particular attention to ethical ones. They are expected to be honest about where ethics was addressed and where it was not.",
+                    "activity": "Evaluate Against Criteria",
+                    "activityDetail": "For each criterion: did the design meet it? What evidence? For ethical criteria: does the design genuinely address the ethical problem, or does it only appear to? What would a more ethical version require? What is the broader impact of this design?",
+                    "outcome": "A mature evaluation that treats ethical performance with the same rigour as functional performance."
+                  },
+                  {
+                    "number": 19,
+                    "title": "Final Presentation",
+                    "goal": "Present and defend the full project including ethical reasoning",
+                    "what": "Students present the complete design journey — the AI problem, their solution, testing findings, and evaluation — with explicit focus on the ethical reasoning behind every key decision.",
+                    "activity": "Present and Defend",
+                    "activityDetail": "5–7 minute presentation: AI problem and why it matters; design solution and ethical decisions made; testing findings (functional and ethical); evaluation including ethical reflection. Class asks 2 questions. Student responds without notes.",
+                    "outcome": "Students can articulate not just what they built, but why — including the ethical trade-offs they navigated."
+                  }
+                ]
+              }
+            ],
+            "assessment": [
+              {
+                "criterion": "A",
+                "focus": "AI system investigation, bias research, and stakeholder analysis with power awareness",
+                "tool": "Research Portfolio + AI Analysis",
+                "linkedLessons": ["Lesson 2 — Input-Output Experiment", "Lesson 3 — AI Capability Chart", "Lesson 4 — Case Study Analysis", "Lesson 5 — Bias Detection", "Lesson 9 — Research", "Lesson 11 — Problem Definition"],
+                "rubric": [
+                  { "band": "7–8", "label": "Advanced", "desc": "Insightful understanding of AI systems, bias, and limitations. Clearly defined, well-justified problem grounded in evidence. Strong, well-structured research with critical analysis connecting findings to design implications." },
+                  { "band": "5–6", "label": "Proficient", "desc": "Clear understanding of AI and its limitations. Problem defined with some justification. Relevant research supporting analysis." },
+                  { "band": "3–4", "label": "Developing", "desc": "Some understanding of AI systems. Problem identified but lacks depth or specificity. Limited research with weak relevance to the design direction." },
+                  { "band": "0–2", "label": "Limited", "desc": "Basic or unclear understanding of AI. Problem poorly defined or not grounded in evidence. Minimal research." }
+                ]
+              },
+              {
+                "criterion": "B",
+                "focus": "Ethically-considered ideation, concept development, and justified selection",
+                "tool": "Design Journal",
+                "linkedLessons": ["Lesson 13 — Multiple Solutions", "Lesson 14 — Detailed Design", "Lesson 15 — Evaluation Matrix", "Lesson 16 — Prototype Creation"],
+                "rubric": [
+                  { "band": "7–8", "label": "Advanced", "desc": "Wide range of thoughtful, ethically-considered ideas. Well-developed concepts with clear connections to research and ethical criteria. Strong, logical justification referencing both research evidence and ethical reasoning." },
+                  { "band": "5–6", "label": "Proficient", "desc": "Multiple relevant ideas generated. Clear development of chosen concept. Reasonable justification with some reference to ethical criteria." },
+                  { "band": "3–4", "label": "Developing", "desc": "Some ideas generated but limited in range or ethical consideration. Limited development of concept. Weak justification." },
+                  { "band": "0–2", "label": "Limited", "desc": "Few or unclear ideas. Weak connection to problem or ethical dimension. Little development shown." }
+                ]
+              },
+              {
+                "criterion": "C",
+                "focus": "Prototype with visible ethical design decisions and documented making process",
+                "tool": "Prototype + Making Record",
+                "linkedLessons": ["Lesson 16 — Prototype Creation"],
+                "rubric": [
+                  { "band": "7–8", "label": "Advanced", "desc": "Well-executed solution that clearly addresses both the functional problem and the ethical considerations. Ethical design decisions are visible in the prototype itself — not just claimed. Thoughtful making decisions documented throughout." },
+                  { "band": "5–6", "label": "Proficient", "desc": "Functional solution that adequately addresses the problem. Some ethical considerations visible in the design. Making process documented." },
+                  { "band": "3–4", "label": "Developing", "desc": "Basic solution with limited effectiveness. Ethical dimension weakly addressed. Making process partially documented." },
+                  { "band": "0–2", "label": "Limited", "desc": "Incomplete or unclear solution. Weak link to the defined problem. Ethical dimension absent from the design." }
+                ]
+              },
+              {
+                "criterion": "D",
+                "focus": "Evaluation against functional and ethical criteria with honest assessment of limitations",
+                "tool": "Evaluation Report",
+                "linkedLessons": ["Lesson 17 — User Testing", "Lesson 18 — Evaluation + Reflection", "Lesson 19 — Final Presentation"],
+                "rubric": [
+                  { "band": "7–8", "label": "Advanced", "desc": "Insightful evaluation that critically analyses both functional effectiveness and ethical impact. Honest acknowledgement of limitations. Suggests meaningful, specific improvements. Broader consequences considered." },
+                  { "band": "5–6", "label": "Proficient", "desc": "Clear evaluation identifying strengths and weaknesses across function and ethics. Some reflection on limitations. Improvements suggested." },
+                  { "band": "3–4", "label": "Developing", "desc": "Basic evaluation with limited insight. Some reflection but surface-level. Few improvements suggested." },
+                  { "band": "0–2", "label": "Limited", "desc": "Minimal evaluation. Little reflection on effectiveness or ethical impact." }
+                ]
+              }
+            ],
+            "successCriteria": [
+              "Identify and map personal AI usage — moving from passive user to active questioner",
+              "Conduct an evidence-based analysis of AI bias using direct testing",
+              "Define a specific AI-related design problem with an ethical dimension",
+              "Write a specification with measurable ethical criteria alongside functional ones",
+              "Generate ideas that address both the functional and ethical dimensions of the problem",
+              "Build a prototype where the ethical intent is visible — not just claimed",
+              "Test for both functional and ethical performance and document findings honestly",
+              "Evaluate against all criteria with equal rigour for ethics and function"
+            ],
+            "differentiation": [
+              "Support: provide pre-structured AI usage maps, curated case studies, and specification templates with example ethical criteria",
+              "Advanced: require students to identify a real AI system in their community, conduct a bias test with statistical documentation, and propose a systemic rather than product-level solution",
+              "Language support: allow bilingual debate preparation, annotated visual presentations, or recorded explanations as alternatives to written and live formats"
+            ],
+            "atlSkills": ["Critical Thinking", "Research Skills", "Communication", "Self-Management"],
+            "realWorldConnection": "Biased hiring algorithms, misinformation amplification, opaque lending decisions, discriminatory facial recognition — these are not hypothetical futures. They are documented present harms. This unit gives students the tools to identify, question, and begin to address them.",
+            "progressionNote": "This unit builds directly on MYP 3 AI Systems — where students mapped AI in systems and traced how data becomes decisions. MYP 4 raises the question from 'how does it work?' to 'is it fair?' — shifting students from system understanding to ethical judgment."
           }
         ]
       },
@@ -1078,10 +1532,10 @@
               }
             ],
             "assessment": [
-              { "criterion": "A", "focus": "Independent research, user analysis, and evidence-based problem definition", "tool": "Research Portfolio + Design Specification" },
-              { "criterion": "B", "focus": "Independent ideation, concept development, and professionally justified selection", "tool": "Design Journal" },
-              { "criterion": "C", "focus": "Planned, functional prototype with documented making process", "tool": "Prototype + Making Record" },
-              { "criterion": "D", "focus": "Critical, balanced evaluation against specification with personal reflection", "tool": "Evaluation Report + Reflection" }
+              { "criterion": "A", "focus": "Independent research, user analysis, and evidence-based problem definition", "tool": "Research Portfolio + Design Specification", "alignment": "Students inquire and analyse through independent problem scoping, primary and secondary research, insight mapping, and specification writing — Lessons 1–8." },
+              { "criterion": "B", "focus": "Independent ideation, concept development, and professionally justified selection", "tool": "Design Journal", "alignment": "Students develop ideas through self-directed divergent thinking, detailed concept sketches, weighted evaluation, and 300–400 word justification — Lessons 9–12." },
+              { "criterion": "C", "focus": "Planned, functional prototype with documented making process", "tool": "Prototype + Making Record", "alignment": "Students create solutions through planned, staged prototype building and structured user testing — Lessons 13–16." },
+              { "criterion": "D", "focus": "Critical, balanced evaluation against specification with personal reflection", "tool": "Evaluation Report + Reflection", "alignment": "Students evaluate through critical analysis against every criterion, personal process reflection, and professional presentation — Lessons 17–20." }
             ],
             "successCriteria": [
               "Identify and scope a real-world problem independently — specific, meaningful, and designable",
@@ -1381,10 +1835,54 @@
               }
             ],
             "assessment": [
-              { "criterion": "A", "focus": "AI system analysis, ethical research, and stakeholder mapping including power dynamics", "tool": "Research Portfolio + AI Analysis" },
-              { "criterion": "B", "focus": "Ethically-considered ideation, concept development, and justified selection with ethical reasoning", "tool": "Design Journal" },
-              { "criterion": "C", "focus": "Prototype appropriate to solution type with documented ethical design decisions", "tool": "Prototype + Making Record" },
-              { "criterion": "D", "focus": "Evaluation against both functional and ethical criteria, with honest assessment of remaining tensions", "tool": "Evaluation Report + Ethical Reflection" }
+              {
+                "criterion": "A",
+                "focus": "AI system analysis, ethical research, and stakeholder mapping including power dynamics",
+                "tool": "Research Portfolio + AI Analysis",
+                "linkedLessons": ["Lesson 1 — AI Output Analysis", "Lesson 2 — System Mapping", "Lesson 3 — AI Capability Analysis", "Lesson 4 — Case Study Analysis", "Lesson 5 — Bias Detection", "Lesson 9 — Research", "Lesson 10 — Stakeholder Mapping", "Lesson 11 — Problem Definition"],
+                "rubric": [
+                  { "band": "7–8", "label": "Advanced", "desc": "Sophisticated analysis of an AI system including inputs, outputs, bias patterns, and systemic limitations. Problem statement ethically precise and evidence-based. Stakeholder map reveals power dynamics — including who benefits from the problem remaining unsolved." },
+                  { "band": "5–6", "label": "Proficient", "desc": "Clear AI system analysis with identified limitations and bias. Problem well-defined with ethical dimension named. Stakeholder map includes primary and secondary users with some awareness of power." },
+                  { "band": "3–4", "label": "Developing", "desc": "Some understanding of AI system but lacks depth or evidence. Problem identified but ethical dimension unclear or surface-level. Stakeholder map basic." },
+                  { "band": "0–2", "label": "Limited", "desc": "Minimal AI system understanding. Problem poorly defined. Stakeholder analysis absent or generic." }
+                ]
+              },
+              {
+                "criterion": "B",
+                "focus": "Ethically-considered ideation, concept development, and justified selection with ethical reasoning",
+                "tool": "Design Journal",
+                "linkedLessons": ["Lesson 13 — Idea Generation", "Lesson 14 — Concept Development", "Lesson 15 — Evaluation Matrix", "Lesson 16 — Justification Writing"],
+                "rubric": [
+                  { "band": "7–8", "label": "Advanced", "desc": "Wide range of ideas that address both functional and ethical dimensions. Chosen concept developed to professional detail. Justification of 300–400 words connecting design to research, insights, ethical criteria, and acknowledged trade-offs." },
+                  { "band": "5–6", "label": "Proficient", "desc": "Multiple ideas generated with some ethical consideration. Concept developed adequately. Justification present with ethical reasoning, though not fully developed." },
+                  { "band": "3–4", "label": "Developing", "desc": "Some ideas generated but limited in ethical consideration. Basic concept development. Justification present but weak on ethical reasoning." },
+                  { "band": "0–2", "label": "Limited", "desc": "Few ideas. Little development. Justification absent or purely functional with no ethical dimension." }
+                ]
+              },
+              {
+                "criterion": "C",
+                "focus": "Prototype appropriate to solution type with documented ethical design decisions",
+                "tool": "Prototype + Making Record",
+                "linkedLessons": ["Lesson 17 — Prototype Build Phase 1", "Lesson 18 — Prototype Build Phase 2", "Lesson 19 — User Testing"],
+                "rubric": [
+                  { "band": "7–8", "label": "Advanced", "desc": "Well-constructed prototype appropriate to the solution type — interface, system, workflow, or physical. Ethical design decisions visible in the prototype itself, not just claimed. Making process documented with reasoning for every significant decision." },
+                  { "band": "5–6", "label": "Proficient", "desc": "Functional prototype that addresses the AI-related problem. Some ethical considerations visible. Making process partially documented." },
+                  { "band": "3–4", "label": "Developing", "desc": "Basic prototype with limited connection to the ethical dimension. Making process poorly documented." },
+                  { "band": "0–2", "label": "Limited", "desc": "Incomplete or unclear prototype. Ethical intent absent from the design." }
+                ]
+              },
+              {
+                "criterion": "D",
+                "focus": "Evaluation against both functional and ethical criteria, with honest assessment of remaining tensions",
+                "tool": "Evaluation Report + Ethical Reflection",
+                "linkedLessons": ["Lesson 20 — Iteration", "Lesson 21 — Evaluation", "Lesson 22 — Final Presentation"],
+                "rubric": [
+                  { "band": "7–8", "label": "Advanced", "desc": "Insightful evaluation treating ethical criteria with equal rigour to functional ones. Honest acknowledgement of remaining ethical tensions. Specific improvements suggested. Broader consequences considered. Professional presentation defended under questioning without notes." },
+                  { "band": "5–6", "label": "Proficient", "desc": "Clear evaluation covering both functional and ethical criteria. Some acknowledgement of limitations. Improvements suggested. Presentation delivered with reasonable confidence." },
+                  { "band": "3–4", "label": "Developing", "desc": "Evaluation present but ethical dimension assessed superficially. Limited reflection on tensions or limitations." },
+                  { "band": "0–2", "label": "Limited", "desc": "Minimal evaluation. Ethical criteria absent from reflection. Presentation incomplete or unclear." }
+                ]
+              }
             ],
             "successCriteria": [
               "Analyse an AI system accurately — identifying inputs, outputs, limitations, and bias",

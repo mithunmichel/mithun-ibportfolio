@@ -315,6 +315,7 @@ function philosophy() {
 /* ── UNITS — grade card overview ──────────────────────── */
 function units() {
   const u = D.units;
+  const ai = u.aiProgression;
   const gradeInfo = {
     'MYP 1': { ages:'Ages 11–12', desc:'Students begin by observing the world carefully — deconstructing everyday objects to understand form, function, and basic design principles.', ib:['Foundations of Observation','Criterion A · B'] },
     'MYP 2': { ages:'Ages 12–13', desc:'Students move from observation to understanding users — developing empathy for the people they are designing for and the contexts they live in.', ib:['Understanding Users','Criterion A · B · C · D'] },
@@ -339,14 +340,16 @@ function units() {
             const info = gradeInfo[lvl.grade] || {};
             const fullCount = lvl.units.filter(x=>x.status==='full').length;
             const total = lvl.units.length;
+            const hasAi = lvl.units.some(x=>x.isAiUnit);
             return `
               <div class="card card-click grade-card" onclick="go('grade--${lvl.grade.replace(' ','-')}')">
                 <span class="grade-card-num">${lvl.grade}</span>
                 <h3>${lvl.theme}</h3>
                 <span class="theme">${info.ages||''}</span>
-                <p>${info.desc||lvl.intro||''}</p>
+                <p>${info.desc||''}</p>
                 <div class="grade-card-tags">
                   ${(info.ib||[]).map(t=>`<span class="tag">${t}</span>`).join('')}
+                  ${hasAi?'<span class="tag" style="background:#EDE9FF;color:#6D28D9">Includes AI Unit</span>':''}
                 </div>
                 <div class="grade-card-footer">
                   <span class="unit-count">${total} unit${total!==1?'s':''} · ${fullCount} fully detailed</span>
@@ -354,6 +357,41 @@ function units() {
                 </div>
               </div>`;
           }).join('')}
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Progression Strip -->
+    <section class="sec sec-alt">
+      <div class="wrap">
+        <div class="sec-hdr">
+          <span class="label" style="color:#6D28D9">AI Across the Curriculum</span>
+          <h2>${ai.tagline}</h2>
+          <p>${ai.intro}</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          ${ai.levels.map(al=>`
+            <div class="card ${al.status==='full'?'card-click':'card-static'}"
+                 style="display:flex;align-items:flex-start;gap:20px;padding:20px 24px"
+                 ${al.status==='full'?`onclick="go('unit--${al.unitId}')"`:''}
+            >
+              <div style="min-width:72px">
+                <span style="display:inline-block;padding:3px 10px;border-radius:20px;font-size:.7rem;font-weight:600;background:#EDE9FF;color:#6D28D9">${al.grade}</span>
+              </div>
+              <div style="flex:1">
+                <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:4px">
+                  <h3 style="font-family:var(--sans);font-weight:500;font-size:.95rem">${al.unitTitle}</h3>
+                  <span style="font-size:.75rem;font-weight:500;color:#6D28D9">${al.focus}</span>
+                </div>
+                <p style="font-size:.82rem;margin-bottom:6px">${al.summary}</p>
+                <span style="font-size:.75rem;font-style:italic;color:var(--txt-3)">Big idea: "${al.bigIdea}"</span>
+              </div>
+              <div style="flex-shrink:0">
+                ${al.status==='full'
+                  ? '<span style="font-size:.7rem;font-weight:600;padding:3px 10px;border-radius:20px;background:#E6F4ED;color:#1A7F5A">Full Unit ↗</span>'
+                  : '<span style="font-size:.7rem;color:var(--txt-3)">In Development</span>'}
+              </div>
+            </div>`).join('')}
         </div>
       </div>
     </section>
@@ -385,18 +423,30 @@ function gradeDetail(gradeSlug) {
           ${lvl.units.map(unit=>`
             <div class="card ${unit.status==='full'?'card-click':'card-static'} unit-card"
                  ${unit.status==='full'?`onclick="go('unit--${unit.id}')"`:''}
-                 style="${unit.status!=='full'?'opacity:.75':''}">
+                 style="${unit.status!=='full'?'opacity:.8':''}">
               <div class="unit-card-top">
+                ${unit.isAiUnit
+                  ? '<span class="tag" style="background:#EDE9FF;color:#6D28D9;font-weight:600">AI Unit</span>'
+                  : ''}
                 <span class="tag ${unit.status==='full'?'tag-full':'tag-outline'}">${unit.status==='full'?'Full Unit':'Outline'}</span>
                 <span class="tag">${unit.duration}</span>
               </div>
               <h3>${unit.title}</h3>
               <p>${unit.desc}</p>
+              ${unit.isAiUnit && unit.bigIdea ? `
+              <div style="margin-bottom:12px;padding:8px 12px;background:#F5F3FF;border-radius:var(--r);border-left:3px solid #6D28D9">
+                <span style="font-size:.72rem;font-weight:500;color:#6D28D9;font-style:italic">"${unit.bigIdea}"</span>
+              </div>` : ''}
               <div class="unit-card-meta">
                 <span class="tag">${unit.focus}</span>
                 ${unit.criteria.map(c=>`<span class="tag">Crit. ${c}</span>`).join('')}
               </div>
               ${unit.status==='full'?'<div style="margin-top:14px"><span class="arrow-link">View Full Unit</span></div>':''}
+              ${unit.isAiUnit && unit.keyActivities ? `
+              <div style="margin-top:14px;border-top:1px solid var(--border-lt);padding-top:12px">
+                <span style="font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#6D28D9;display:block;margin-bottom:8px">Key Activities</span>
+                ${unit.keyActivities.map(a=>`<div style="font-size:.78rem;color:var(--txt-2);padding:3px 0;display:flex;gap:8px"><span style="color:#6D28D9;flex-shrink:0">→</span>${a}</div>`).join('')}
+              </div>` : ''}
             </div>`).join('')}
         </div>
       </div>
@@ -523,7 +573,10 @@ function unitDetail(id) {
                 ${unit.assessment.map(a=>`
                   <tr>
                     <td><span class="crit-badge">${a.criterion}</span></td>
-                    <td>${a.focus}</td>
+                    <td>
+                      <div>${a.focus}</div>
+                      ${a.alignment ? `<div style="font-size:.72rem;color:var(--txt-3);margin-top:3px;font-style:italic">${a.alignment}</div>` : ''}
+                    </td>
                     <td><span class="tag">${a.tool}</span></td>
                   </tr>`).join('')}
               </tbody>
@@ -539,6 +592,37 @@ function unitDetail(id) {
         </div>
       </div>
     </section>
+
+    ${unit.assessment[0].rubric ? `
+    <section class="sec sec-white">
+      <div class="wrap">
+        <div class="sec-hdr">
+          <span class="label">Assessment Rubric</span>
+          <h2>How learning is assessed — criterion by criterion</h2>
+          <p>Each stage of this unit maps directly to an MYP criterion. Assessment is not separate from learning — it is embedded within the process.</p>
+        </div>
+        ${unit.assessment.map(a=>`
+          <div style="margin-bottom:32px">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+              <span class="crit-badge">${a.criterion}</span>
+              <div>
+                <h3 style="font-family:var(--sans);font-weight:600;font-size:.95rem;margin-bottom:2px">Criterion ${a.criterion} — ${a.focus}</h3>
+                ${a.linkedLessons ? `<p style="font-size:.75rem;color:var(--accent);margin:0">${a.linkedLessons.join(' · ')}</p>` : ''}
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px">
+              ${a.rubric.map(r=>`
+                <div style="padding:14px 16px;border-radius:var(--r-lg);border:1.5px solid var(--border);background:var(--white)">
+                  <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+                    <span style="font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:20px;background:${r.band==='7–8'?'var(--accent-lt)':r.band==='5–6'?'#E6F4ED':r.band==='3–4'?'#FFF4E6':'#FDE8E8'};color:${r.band==='7–8'?'var(--accent)':r.band==='5–6'?'#1A7F5A':r.band==='3–4'?'#B45309':'#C0392B'}">${r.band}</span>
+                    <span style="font-size:.75rem;font-weight:600;color:var(--txt-2)">${r.label}</span>
+                  </div>
+                  <p style="font-size:.78rem;line-height:1.55">${r.desc}</p>
+                </div>`).join('')}
+            </div>
+          </div>`).join('')}
+      </div>
+    </section>` : ''}
 
     <section class="sec sec-alt">
       <div class="wrap">
