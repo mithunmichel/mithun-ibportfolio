@@ -449,7 +449,8 @@
               "Allow oral explanation as an alternative to written reflection for students with language barriers"
             ],
             "atlSkills": ["Communication", "Critical Thinking", "Collaboration", "Research Skills"],
-            "realWorldConnection": "Students explore how design impacts elderly users, children, people with temporary injuries, and people with disabilities — understanding that inclusive design is good design."
+            "realWorldConnection": "Students explore how design impacts elderly users, children, people with temporary injuries, and people with disabilities — understanding that inclusive design is good design.",
+            "classroomExecution": "This unit is deliberately structured to build classroom culture before building design skills. In Week 1, the focus is on inquiry and problem definition — students learn what Design is, what it is not, and what this class expects of them. Vague observations are challenged. Shallow problem statements are returned for revision. By Week 2, students generate and justify ideas under real criteria — they understand that the first idea is rarely the best. Week 3 introduces peer testing and honest evaluation: students learn to give and receive structured feedback, not praise. By the end of this unit, students know that this is a thinking subject — and that the teacher expects evidence of thought, not evidence of effort."
           },
           {
             "id": "community-wayfinding",

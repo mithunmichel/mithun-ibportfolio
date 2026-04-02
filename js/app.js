@@ -157,6 +157,28 @@ function home() {
       </div>
     </section>
 
+    <section class="sec sec-white">
+      <div class="wrap">
+        <div class="sec-hdr">
+          <span class="label">Why Design Belongs in Schools</span>
+          <h2>The only subject that teaches students to move from a problem to a solution — systematically</h2>
+        </div>
+        <div class="pillars-grid">
+          ${[
+            {icon:'search', t:'Transferable Thinking', d:'Observation, empathy, iteration, and evaluation — skills that work in science, business, and life. Design is not a subject. It is a thinking method.'},
+            {icon:'target', t:'Real-World Problems', d:'Students do not practise on hypothetical exercises. They investigate real challenges, design for real people, and evaluate real outcomes.'},
+            {icon:'lightbulb', t:'Process Over Product', d:'In every other subject, the answer matters. In Design, the thinking matters. Students learn that how you arrive at a solution is as important as the solution itself.'},
+            {icon:'users', t:'IB by Design', d:'MYP Design is one of the eight subject groups — not an elective. It builds ATL skills, supports interdisciplinary learning, and develops the independent thinking the IB demands.'},
+          ].map(p=>`
+            <div class="card card-static pillar-card">
+              ${icon(p.icon)}
+              <h3>${p.t}</h3>
+              <p>${p.d}</p>
+            </div>`).join('')}
+        </div>
+      </div>
+    </section>
+
     <section class="sec sec-alt">
       <div class="wrap">
         <div class="sec-hdr">
@@ -679,6 +701,19 @@ function unitDetail(id) {
       </div>
     </section>
 
+    ${unit.classroomExecution ? `
+    <section class="sec sec-white">
+      <div class="wrap">
+        <div class="sec-hdr">
+          <span class="label">Teaching Approach</span>
+          <h2>How this unit builds classroom culture</h2>
+        </div>
+        <div style="max-width:640px;padding:24px 28px;background:var(--bg-alt);border-radius:var(--r-lg);border-left:4px solid var(--accent)">
+          <p style="font-size:.95rem;line-height:1.85">${unit.classroomExecution}</p>
+        </div>
+      </div>
+    </section>` : ''}
+
     ${assocLessons.length ? `
     <section class="sec sec-white">
       <div class="wrap">
@@ -779,7 +814,19 @@ function demos(filterGrade = 'All') {
               </div>
             </div>`).join('')}
         </div>
-        ${filtered.length===0?`<p style="color:var(--txt-3);text-align:center;padding:40px 0">No lessons yet for ${filterGrade}. Check back soon.</p>`:''}
+        ${filtered.length===0 ? `
+        <div style="text-align:center;padding:48px 0">
+          <p style="color:var(--txt-3);margin-bottom:16px">
+            ${filterGrade==='MYP 5'
+              ? 'MYP 5 demo lessons are embedded within the full unit plans.'
+              : `No standalone lessons yet for ${filterGrade}.`}
+          </p>
+          ${filterGrade==='MYP 5' ? `
+          <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+            <button class="btn btn-primary" onclick="go('unit--independent-design-project')">View Independent Design Project</button>
+            <button class="btn btn-outline" onclick="go('unit--designing-with-against-ai')">View Designing With and Against AI</button>
+          </div>` : ''}
+        </div>` : ''}
       </div>
     </section>
 
