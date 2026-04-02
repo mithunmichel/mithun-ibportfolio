@@ -573,14 +573,20 @@ function unitDetail(id) {
                 ${unit.assessment.map(a=>`
                   <tr>
                     <td><span class="crit-badge">${a.criterion}</span></td>
-                    <td>
-                      <div>${a.focus}</div>
-                      ${a.alignment ? `<div style="font-size:.72rem;color:var(--txt-3);margin-top:3px;font-style:italic">${a.alignment}</div>` : ''}
-                    </td>
+                    <td>${a.focus}</td>
                     <td><span class="tag">${a.tool}</span></td>
                   </tr>`).join('')}
               </tbody>
             </table>
+            ${unit.assessment.some(a=>a.alignment) ? `
+            <div style="margin-top:20px">
+              <span class="label" style="margin-bottom:10px">Assessment Alignment</span>
+              ${unit.assessment.filter(a=>a.alignment).map(a=>`
+                <div style="display:flex;gap:10px;margin-bottom:10px;font-size:.8rem;color:var(--txt-2)">
+                  <span class="crit-badge" style="flex-shrink:0;margin-top:1px">${a.criterion}</span>
+                  <span style="line-height:1.6">${a.alignment}</span>
+                </div>`).join('')}
+            </div>` : ''}
           </div>
           <div>
             <span class="label">Success Criteria</span>
